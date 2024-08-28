@@ -1,0 +1,136 @@
+.rq-form-btn {
+	margin: 0 auto;
+	max-width: 900px;
+	padding: 25px 30px;
+	border-radius: 17px;
+	background-color: #FFF8F4;
+	border: 1px solid #FFD6C5;
+	@media #{$md,$sm,$xs} {
+		padding: 30px 15px;
+	}
+	.nav-tabs {
+		.nav-link {
+			z-index: 1;
+			padding: 0;
+			width: 252px;
+			position: relative;
+			padding-bottom: 20px;
+			margin: 0px 10px 15px;
+			&:before {
+				left: 0;
+				bottom: 0;
+				z-index: -1;
+				width: 100%;
+				height: 80%;
+				content: '';
+				position: absolute;
+				border-radius: 10px;
+				background-color: #FFE7DD;
+				transition: all 500ms ease;
+			}
+			i {
+				color: #fff;
+				width: 88px;
+				height: 88px;
+				display: flex;
+				font-size: 55px;
+				margin: 0 auto;
+				border-radius: 10px;
+				align-items: center;
+				margin-bottom: 10px;
+				justify-content: center;
+				background-color: var(--log-base-color);
+				transition: all 500ms ease;
+			}
+			span {
+				display: block;
+				font-size: 24px;
+				font-weight: 700;
+				transition: all 500ms ease;
+				color: var(--log-title-color);
+				font-family: var(--log-heading);
+			}
+			&.active {
+				&:before {
+					background-color: var(--log-base-color);
+				}
+				span {
+					color: #fff;
+				}
+				i {
+					background-color: #003E4D;
+				}
+			}
+		}
+	}
+}
+.log-rq-form-tab {
+	padding: 50px;
+	margin: 0 auto;
+	max-width: 1100px;
+	margin-top: 50px;
+	border-radius: 20px;
+	border: 1px solid #09090926;
+	box-shadow: 0px 0px 30px 2px #0000000D;
+	@media #{$md,$sm,$xs} {
+		padding: 30px 15px;
+	}
+}
+.log-rq-form-wrap {
+	h3 {
+		font-size: 40px;
+		font-weight: 800;
+		padding-bottom: 40px;
+		color: var(--log-title-color);
+		@media #{$sm,$xs} {
+			font-size: 30px;
+		}
+	}
+	input,select,textarea {
+		width: 100%;
+		height: 60px;
+		border: none;
+		padding-left: 20px;
+		border-radius: 60px;
+		margin-bottom: 20px;
+		background-color: rgba(0, 62, 77, 0.04);
+		&::placeholder {
+			font-size: 18px;
+		}
+	}
+	select {
+		font-size: 18px;
+		-webkit-appearance: none;
+	}
+	textarea {
+		height: 175px;
+		padding-top: 20px;
+		border-radius: 20px;
+	}
+	.fr-select-option {
+		&:before {
+			top: 15px;
+			right: 15px;
+			content: '\f078';
+			font-weight: 400;
+			position: absolute;
+			font-family: 'Font Awesome 5 Pro';
+		}
+	}
+	.quote-btn {
+		margin-top: 15px;
+		button {
+			color: #fff;
+			border: none;
+			font-weight: 800;
+			padding: 15px 35px;
+			border-radius: 100px;
+			text-transform: uppercase;
+			background-color: #36353A;
+			transition: all 500ms ease;
+			&:hover {
+				background-color: var(--log-base-color);
+			}
+		}
+	}
+}

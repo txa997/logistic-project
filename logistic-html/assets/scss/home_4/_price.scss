@@ -1,0 +1,224 @@
+.log-pricing-section-4 {
+	z-index: 1;
+	&:before {
+		left: 0;
+		top: -95px;
+		height: 75%;
+		content: '';
+		opacity: 0.1;
+		width: 0%;
+		max-width: 315px;
+		position: absolute;
+		transition: all 3000ms ease;
+		background-color: var(--log-title-color);
+		@media #{$lg,$md,$sm,$xs} { 
+			display: none;
+		}
+	}
+	&.active {
+		&:before {
+			width: 100%;
+			transition-delay: 1000ms;
+		}
+	}
+	.log-price-bg {
+		top: 0;
+		right: 0;
+		width: 90%;
+		z-index: -1;
+		height: 75%;
+		@media #{$lg,$md,$sm,$xs} { 
+			width: 100%;
+		}
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+		&:before {
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			content: '';
+			position: absolute;
+			background: rgba(0, 62, 77, .83);
+		}
+	}
+	.log-section-title-3 {
+		.section_title {
+			color: #fff;
+		}
+	}
+}
+.log-price-item-4 {
+	z-index: 1;
+	padding: 40px;
+	margin: 0 auto;
+	max-width: 390px;
+	overflow: hidden;
+	margin-bottom: 30px;
+	border-radius: 10px;
+	background-color: #fff;
+	transition: all 500ms ease;
+	border: 2px solid transparent;
+	box-shadow: 0px 0px 40px 2px #0000001A;
+	@media #{$lg} { 
+		padding: 30px 20px;
+	}
+	@media #{$xxs} { 
+		max-width: 360px;
+		padding: 30px 20px;
+	}
+	.price-plan-title {
+		margin-bottom: 12px;
+		span {
+			width: 100%;
+			font-size: 24px;
+			display: block;
+			font-weight: 700;
+			position: relative;
+			font-family: var(--log-heading-2);
+			color: var(--log-title-color-2);
+			&:before,
+			&:after {
+				top: 16px;
+				width: 0px;
+				content: '';
+				height: 2px;
+				position: absolute;
+				transition: all 1500ms ease;
+				background-color: var(--log-base-color);
+				@media #{$lg,$md,$sm,$xs} { 
+					display: none;;
+				}
+			}
+			&:before {
+				left: 0;
+			}
+			&:after {
+				right: 0;
+			}
+		}
+	}
+	&.active {
+		.price-plan-title {
+			span {
+				&:before,
+				&:after {
+					width: 74px;
+					transition-delay: 1000ms;
+				}
+			}
+		}
+	}
+	.price-img {
+		overflow: hidden;
+		margin-bottom: 30px;
+		transition: all 500ms ease;
+		@media #{$lg,$md,$sm,$xs} { 
+			margin-bottom: 20px;
+		}
+	}
+	.price-value {
+		font-size: 52px;
+		font-weight: 800;
+		padding-bottom: 15px;
+		margin-bottom: 35px;
+		color: var(--log-title-color-2);
+		border-bottom: 1px solid  #D9D9D9;
+		@media #{$xl} { 
+			font-size: 45px;
+		}
+		@media #{$lg,$md,$sm,$xs} { 
+			font-size: 36px;
+			margin-bottom: 25px;
+		}
+		sub {
+			left: 0px;
+			bottom: 23px;
+			font-size: 30px;
+			font-weight: 600;
+			color: var(--log-base-color);
+			@media #{$xl} { 
+				bottom: 15px;
+			}
+			@media #{$lg,$md,$sm,$xs} { 
+				font-size: 20px;
+				bottom: 12px;
+			}
+		}
+		sup {
+			top: 0;
+			left: 8px;
+			font-size: 20px;
+			color: var(--log-base-color);
+			font-weight: 500;
+			@media #{$lg,$md,$sm,$xs} { 
+				font-size: 18px;
+			}
+		}
+	}
+	.price-list {
+		li {
+			display: flex;
+			font-size: 20px;
+			font-weight: 500;
+			align-items: center;
+			margin-bottom: 14px;
+			color: var(--log-title-color-2);
+			i {
+				top: 1px;
+				margin-right: 12px;
+				position: relative;
+				color: var(--log-base-color);
+			}
+		}
+	}
+	.price-btn {
+		margin-top: 40px;
+		a {
+			width: 100%;
+			display: flex;
+			font-size: 16px;
+			font-weight: 700;
+			padding: 16px 15px;
+			border-radius: 50px;
+			align-items: center;
+			justify-content: center;
+			backdrop-filter: blur(10px);
+			color: var(--log-base-color);
+			font-family: var(--log-heading-2);
+			border: 2px solid var(--log-base-color);
+			i {
+				display: flex;
+				font-size: 25px;
+				margin-left: 10px;
+			}
+			&:hover {
+				color: #fff;
+				background-color: var(--log-base-color);
+			}
+		}
+	}
+	.price-bottom-img {
+		left: 0;
+		bottom: 0;
+		z-index: -1;
+		&:before {
+			top: 0;
+			left: 0;
+			width: 100%;
+			content: '';
+			height: 100%;
+			position: absolute;
+			background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.4) 100%);
+		}
+	}
+	&:hover {
+		border: 2px solid var(--log-base-color);
+		.price-img {
+			border-radius: 15px;
+		}
+	}
+}

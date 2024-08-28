@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" width="200" height="200" style="shape-rendering: auto; display: block; background: rgb(255, 255, 255);"><g data-idx="1"><g transform="matrix(0.917060074385124,-0.3987490689252462,0.3987490689252462,0.917060074385124,-15.790457165518518,24.08444972700611)" data-idx="2">
+  <circle stroke-width="3" stroke="#fa7238" fill="#104b59" r="40" cy="50" cx="50" data-idx="3"></circle>
+  <path stroke-width="3" stroke="#fa7238" d="M10 50 L90 50" data-idx="4"></path>
+  <ellipse stroke-width="3" stroke="#fa7238" fill="none" ry="40" cy="50" cx="50" data-idx="5" rx="16.799922943115234">
+    
+  </ellipse>
+  <ellipse stroke-width="3" stroke="#fa7238" fill="none" ry="40" cy="50" cx="50" data-idx="7" rx="36.560081481933594">
+    
+  </ellipse>
+  <ellipse stroke-width="3" stroke="#fa7238" fill="none" ry="40" cy="50" cx="50" data-idx="9" rx="9.864080429077148">
+    
+  </ellipse>
+</g><g data-idx="11"></g></g><text data-watermark="true" text-anchor="middle" dominant-baseline="middle" stroke-opacity="0.1" fill="black" fill-opacity="0.1" stroke="white" stroke-width="1" font-size="5.0" x="50" y="50" data-idx="12" style="opacity: 1; font-size: 5px;"></text></svg>

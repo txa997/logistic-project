@@ -1,0 +1,147 @@
+.log-pricing-section-5 {
+	z-index: 1;
+	overflow: hidden;
+	padding-top: 115px;
+	padding-bottom: 270px;
+	&.inner_version {
+		padding-bottom: 100px;
+	}
+	.price-bg {
+		top: 0;
+		left: 0;
+		z-index: -1;
+		width: 100%;
+		height: 100%;
+		&:before {
+			top: 0;
+			left: 0;
+			z-index: 1;
+			width: 100%;
+			opacity: .87;
+			height: 100%;
+			content: '';
+			position: absolute;
+			background-color: #003E4D;
+		}
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+	.price-shape {
+		top: 0;
+		right: 0;
+		@media #{$md,$sm,$xs} {
+			display: none;
+		}
+	}
+	.log-section-title-4 {
+		.section_title {
+			color: #fff;
+		}
+		p {
+			color: #fff;
+			margin: 0 auto;
+			max-width: 705px;
+		}
+	}
+}
+.log-pricing-item-5 {
+	margin: 0 auto;
+	max-width: 613px;
+	overflow: hidden;
+	padding: 40px 30px;
+	margin-bottom: 40px;
+	border-radius: 20px;
+	border: 1px solid #FFFFFF1A; 
+	.item-content {
+		gap: 30px 60px;
+		@media #{$xl} { 
+			gap: 30px;
+		}
+		@media #{$lg,$md,$sm,$xs} { 
+			flex-wrap: wrap;
+		}
+	}
+	.item-text {
+		max-width: 220px;
+		h3 {
+			color: #fff;
+			font-size: 30px;
+			font-weight: 600;
+			padding-bottom: 10px;
+		}
+		p {
+			color: #fff;
+			padding-bottom: 15px;
+			border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+		}
+		h2 {
+			font-size: 64px;
+			font-weight: 800;
+			padding-top: 15px;
+			padding-bottom: 25px;
+			transition: all 500ms ease;
+			color: rgba(255, 255, 255, 0.2);
+		}
+		a {
+			width: 100%;
+			color: #FF5C01;
+			font-size: 16px;
+			max-width: 222px;
+			font-weight: 600;
+			padding: 16px 15px;
+			border-radius: 6px;
+			display: inline-block;
+			border: 1px solid #FF5C01;
+			font-family: var(--log-heading-2);
+			&:hover {
+				color: #fff;
+				background-color: var(--log-base-color);
+			}
+		}
+	}
+	.item-list {
+		color: #fff;
+		position: relative;
+		&:before {
+			top: 0;
+			left: -27px;
+			width: 1px;
+			height: 100%;
+			content: '';
+			position: absolute;
+			background-color: rgba(255, 255, 255, .12);
+			@media #{$xl,$lg,$md,$sm,$xs} { 
+				display: none;
+			}
+		}
+		li {
+			display: flex;
+			font-size: 18px;
+			align-items: center;
+			margin-bottom: 25px;
+			i {
+				margin-right: 10px;
+				transition: all 500ms ease;
+				color: rgba(118, 120, 125, 1);
+			}
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+	&:hover {
+		.item-text {
+			h2 {
+				color: rgba(255, 255, 255, 1);
+			}
+		}
+		.item-list {
+			i {
+				color: var(--log-base-color);
+			}
+		}
+	}
+}

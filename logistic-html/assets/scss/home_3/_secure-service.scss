@@ -1,0 +1,113 @@
+@keyframes TXSKEW {
+	0%{
+		-webkit-clip-path:inset(0 100% 0 0);
+		clip-path:inset(0 100% 0 0);
+		-webkit-transform:translateX(30px);
+		transform:translateX(30px)
+	}
+	100%{
+		-webkit-clip-path:inset(0 0 0 0);
+		clip-path:inset(0 0 0 0);
+		-webkit-transform:translateX(0);
+		transform:translateX(0)
+	}
+}
+.log-secure-service-item {
+	gap: 40px;
+	padding: 55px;
+	margin-bottom: 20px;
+	border-radius: 120px;
+	border: 2px solid #0f3d4a;
+	@media #{$xl,$lg,$md,$sm,$xs} { 
+		gap: 30px;
+	}
+	@media #{$lg,$md,$sm,$xs} { 
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.item-serial {
+		width: 60px;
+		height: 60px;
+		color: #252525;
+		font-size: 20px;
+		font-weight: 900;
+		border-radius: 100%;
+		background-color: var(--log-base-color);
+	}
+	.secure_title {
+		font-size: 28px;
+		font-weight: 800;
+		max-width: 435px;
+		color: var(--log-title-color);
+		@media #{$xl,$lg,$md,$sm,$xs} {
+			max-width: 380px;
+		}
+	}
+	.secure-value {
+		padding: 15px 50px;
+		border-radius: 50px;
+		background-color: var(--log-base-color);
+		@media #{$xl,$lg,$md,$sm,$xs} { 
+			padding: 12px 30px;
+
+		}
+		h3,span {
+			color: #252525;
+			line-height: 1;
+			font-size: 30px;
+			font-weight: 900;
+			@media #{$xl,$lg,$md,$sm,$xs} { 
+				font-size: 25px;
+			}
+		}
+		span {
+			font-size: 20px;
+			@media #{$xl,$lg,$md,$sm,$xs} { 
+				font-size: 18px;
+			}
+		}
+	}
+	.secure-img {
+		top: 50px;
+		right: 45px;
+		width: 347px;
+		height: 238px;
+		mask-size: cover;
+		position: absolute;
+		mask-position: center;
+		mask-repeat: no-repeat;
+		-webkit-transform: translate(0, -50%) scale(.5);
+		-khtml-transform: translate(0, -50%) scale(.5);
+		-moz-transform: translate(0, -50%) scale(.5);
+		-ms-transform: translate(0, -50%) scale(.5);
+		-o-transform: translate(0, -50%) scale(.5);
+		transform: translate(0, -50%) scale(.5);
+		opacity: 0;
+		transition: all 300ms linear 0ms;
+		mask-image: url(../img/project/sc1.png);
+		@media #{$lg,$md,$sm,$xs} { 
+			display: none;
+		}
+	}
+	&:hover,
+	&.active {
+		.secure-img {
+			transform: translate(0, -50%) scale(1);
+			opacity: 1;
+			
+			.item-img {
+				-webkit-animation-name: TXSKEW;
+				animation-name: TXSKEW;
+				-webkit-animation-fill-mode: both;
+				animation-fill-mode: both;
+				-webkit-animation-duration: 500ms;
+				animation-duration: 500ms;
+				-webkit-animation-timing-function: cubic-bezier(.4,0,.2,1);
+				animation-timing-function: cubic-bezier(.4,0,.2,1);
+				will-change: transform;
+				-webkit-backface-visibility: hidden;
+				backface-visibility: hidden;
+			}
+		}
+	}
+}

@@ -1,0 +1,175 @@
+.log-team-details-img {
+	max-width: 432px;
+	overflow: hidden;
+	border-radius: 10px;
+	@media #{$md,$sm,$xs} {
+		margin-bottom: 30px; 
+	}
+}
+.log-team-details-info {
+	padding-left: 10px;
+	@media #{$md,$sm,$xs} {
+		margin-bottom: 30px; 
+	}
+	.team-title-degi {
+		margin-bottom: 25px;
+		h3 {
+			line-height: 1;
+			font-size: 42px;
+			font-weight: 800;
+			padding-bottom: 10px;
+			color: var(--log-title-color);
+			@media #{$sm,$xs} {
+				font-size: 34px;
+			}
+		}
+		span {
+			color: var(--log-base-color);
+		}
+	}
+	.team-info {
+		li {
+			color: #6A6A6A;
+			margin-bottom: 15px;
+			span {
+				margin-right: 20px;
+				color: var(--log-title-color);
+			}
+		}
+	}
+	.team-social {
+		margin-top: 30px;
+		h4 {
+			font-size: 20px;
+			font-weight: 800;
+			padding-bottom: 20px;
+			color: var(--log-title-color);
+		}
+		a {
+			width: 42px;
+			height: 42px;
+			display: flex;
+			border-radius: 100%;
+			margin-right: 15px;
+			align-items: center;
+			justify-content: center;
+			color: var(--log-base-color);
+			border: 1px solid var(--log-base-color);
+			&:hover {
+				color: #fff;
+				background-color: var(--log-base-color);
+			}
+		}
+	}
+}
+.log-team-skill {
+	@media #{$md,$sm,$xs} {
+		margin-bottom: 30px; 
+	}
+	h3 {
+		font-size: 30px;
+		font-weight: 800;
+		padding-bottom: 15px;
+		color: var(--log-title-color);
+		@media #{$sm,$xs} {
+			font-size: 24px;
+		}
+	}
+	p {
+		font-size: 18px;
+		padding-bottom: 25px;
+	}
+	.skill-set-percent {
+		margin-bottom: 30px;
+	}
+	.skill-set-percent .progress-bar {
+		top: 0;
+		left: 0;
+		height: 10px;
+		background-color: var(--log-base-color);
+	}
+	.skill-set-percent h4 {
+		padding-left: 0;
+		padding-bottom: 8px;
+	}
+	.skill-set-percent .progress {
+		height: 10px;
+	}
+	.skill-set-percent .progress span {
+		right: 0;
+		top: -25px;
+	}
+}
+.log-team-personal-info {
+	h3 {
+		font-size: 30px;
+		font-weight: 800;
+		padding-bottom: 15px;
+		color: var(--log-title-color);
+		@media #{$sm,$xs} {
+			font-size: 24px;
+		}
+	}
+	p {
+		padding-bottom: 15px;
+	}
+}
+.log-team-contact-form {
+	padding: 50px;
+	border-radius: 10px;
+	background-color: #F7F7F7;
+	@media #{$sm,$xs} {
+		padding: 30px 15px;
+	}
+	h3 {
+		font-size: 36px;
+		font-weight: 800;
+		padding-bottom: 10px;
+		color: var(--log-title-color);
+		@media #{$sm,$xs} {
+			font-size: 30px;
+		}
+	}
+	p {
+		color: #6A6A6A;
+	}
+	form {
+		margin-top: 40px;
+		input,textarea {
+			width: 100%;
+			height: 62px;
+			border: none;
+			border: none;
+			padding-left: 30px;
+			margin-bottom: 20px;
+			border-radius: 100px;
+			background-color: #fff;
+			&::placeholder {
+				color: #6A6A6A;
+				font-size: 16px;
+			}
+		}
+		textarea {
+			width: 100%;
+			height: 178px;
+			padding-top: 20px;
+			border-radius: 10px;
+		}
+		.submit-btn {
+			button {
+				color: #fff;
+				font-size: 16px;
+				font-weight: 800;
+				border: none;
+				padding: 15px 30px;
+				border-radius: 100px;
+				background-color: #36353A;
+				text-transform: uppercase;
+				transition: all 500ms ease;
+				&:hover {
+					background-color: var(--log-base-color);
+				}
+			}
+		}
+	}
+}

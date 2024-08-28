@@ -1,0 +1,151 @@
+.log-sponsor-section-4 {
+	z-index: 1;
+	margin: 0 auto;
+	overflow: hidden;
+	max-width: 1920px;
+	padding-bottom: 150px;
+	@media #{$lg,$md,$sm,$xs} {
+		padding-bottom: 0;
+	}
+	.log-sponsor-content-wrap-4 {
+		z-index: 1;
+		overflow: hidden;
+		padding: 80px 0px 140px;
+		background-color: #FFE9E2;
+		@media #{$lg,$md,$sm,$xs} {
+			padding: 50px 0px;
+		}
+		&:before,
+		&:after {
+			left: -4%;
+			width: 70%;
+			content: '';
+			z-index: -1;
+			bottom:  -150px;
+			height: 200px;
+			position: absolute;
+			background-color: #fff;
+			transform: rotate(8deg);
+			@media #{$lg,$md,$sm,$xs} {
+				display: none;
+			}
+		}
+		&:after {
+			z-index: 2;
+			left: auto;
+			right: -4%;
+			transform: rotate(-8deg);
+		}
+		.tringle-shape {
+			left: -4%;
+			width: 74%;
+			content: "";
+			z-index: -2;
+			bottom: -145px;
+			height: 200px;
+			position: absolute;
+			-webkit-transform: rotate(8deg);
+			transform: rotate(10deg);
+			background-color: var(--log-base-color);
+			@media #{$lg,$md,$sm,$xs} {
+				display: none;
+			}
+		}
+		.sponsor-shape-bg {
+			top: 0;
+			left: 0;
+			width: 100%;
+			z-index: -3;
+			height: 100%;
+			opacity: 0.08;
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+	}
+	.log-sponsor-bg {
+		top: 0;
+		right: 0;
+		width: 50%;
+		z-index: 1;
+		height: 100%;
+		@media #{$lg,$md,$sm,$xs} {
+			display: none;
+		}
+		&:before {
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			content: '';
+			position: absolute;
+			background-color: rgba(9, 9, 9, 0.6);
+		}
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+	.log-truck-img {
+		right: 0;
+		top: 35px;
+		z-index: 3;
+		@media #{$xl,$lg,$md,$sm,$xs} {
+			right: -150px;
+		}
+		@media #{$lg,$md,$sm,$xs} {
+			display: none;
+		}
+	}
+	.log-plane-img {
+		top: 30px;
+		z-index: 2;
+		left: -50px;
+		@media #{$xxxl} { 
+			left: -150px;
+		}
+		@media #{$xxl,$xl,$lg,$md,$sm,$xs} { 
+			display: none;
+		}
+	}
+}
+.log-sponsor-content-4 {
+	.log-sponsor-item-4 {
+		display: flex;
+		flex-wrap: wrap;
+		max-width: 750px;
+		@media #{$xl,$lg,$md,$sm,$xs} {
+			max-width: 550px;
+		}
+		@media #{$lg,$md,$sm,$xs} {
+			margin: 0 auto;
+		}
+		@media #{$xs} {
+			justify-content: center;
+		}
+		li {
+			width: 170px;
+			display: flex;
+			margin: 25px 20px;
+			align-items: center;
+			justify-content: center;
+			@media #{$xxl,$xl,$lg,$md,$sm,$xs} { 
+				width: 150px;
+			}
+			@media #{$xl,$lg,$md,$sm,$xs} { 
+				width: 140px;
+			}
+			img {
+				transition: all 500ms ease;
+			}
+			&:hover {
+				img {
+					transform: scale(1.05);
+				}
+			}
+		}
+	}
+}

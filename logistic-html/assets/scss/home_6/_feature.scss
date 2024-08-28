@@ -1,0 +1,126 @@
+.log-feature-section-6 {
+	background-color: #393939;
+	.feature-side-1 {
+		left: 0;
+		bottom: 0;
+		z-index: 1;
+		@media #{$xxl,$xl,$lg,$md,$sm,$xs} {
+			display: none;
+		}
+	}
+	.feature-side-2 {
+		top: 0;
+		right: 0;
+		@media #{$xxl,$xl,$lg,$md,$sm,$xs} {
+			display: none;
+		}
+	}
+}
+.log-feature-content-6 {
+	margin: 0 auto;
+	max-width: 1380px;
+	@media #{$md,$sm,$xs} {
+		flex-wrap: wrap;
+	}
+}
+.log-feature-item-6 {
+	gap: 20px;
+	width: 25%;
+	z-index: 1;
+	padding: 35px 18px 25px 48px;
+	border-right: 1px solid #777676; 
+	@media #{$xl,$lg} {
+		padding: 25px 18px 25px 20px;
+	}
+	@media #{$md,$sm,$xs} {
+		width: 50%;
+		border: none;
+		padding: 25px 18px 25px 20px;
+	}
+	@media #{$xs} {
+		width: 100%;
+		justify-content: center;
+		padding: 25px 18px 25px 15px;
+	}
+	&:before {
+		right: 0;
+		top: 15px;
+		left: 0px;
+		z-index: -1;
+		width: 93%;
+		content: '';
+		height: 0%;
+		margin: 0 auto;
+		position: absolute;
+		border-radius: 15px;
+		transition: all 500ms ease;
+		background-color: var(--log-base-color);
+		@media #{$md,$sm,$xs} {
+			top: 0;
+			width: 100%;
+		}
+	}
+	.item-icon {
+		width: 70px;
+		margin-top: 12px;
+		@media #{$xl,$lg} {
+			width: 50px;
+		}
+		@media #{$xxs} {
+			width: 40px;
+		}
+		i {
+			color: #fff;
+			font-size: 70px;
+			display: flex;
+			@media #{$xl,$lg} {
+				font-size: 50px;
+			}
+			@media #{$xxs} {
+				font-size: 40px;
+			}
+		}
+	}
+	.item-text {
+		max-width: 180px;
+		span {
+			font-size: 18px;
+			display: block;
+			font-weight: 600;
+			margin-bottom: 10px;
+			color: var(--log-base-color);
+			transition: all 500ms ease;
+		}
+		h3 {
+			color: #fff;
+			font-size: 30px;
+			font-weight: 600;
+			@media #{$xl,$lg} {
+				font-size: 18px;
+			}
+			@media #{$xxs} {
+				font-size: 20px;
+			}
+		}
+	}
+	&:last-child {
+		border: none;
+	}
+	&.active {
+
+		.item-text {
+			span {
+				color: #fff;
+				margin-bottom: 5px;
+			}
+		}
+		&:before {
+			height: 100%;
+		}
+	}
+	&:hover {
+		.item-icon {
+			animation: log_icon_shake 1.8s ease-out infinite;
+		}
+	}
+}

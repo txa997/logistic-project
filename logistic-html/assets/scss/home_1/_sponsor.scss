@@ -1,0 +1,12 @@
+.log-sponsor-item {
+	height: 69px;
+	display: flex;
+	cursor: pointer;
+	filter: grayscale(1);
+	align-content: center;
+	justify-content: center;
+	transition: all 500ms ease;
+	&:hover {
+		filter: grayscale(0);
+	}
+}

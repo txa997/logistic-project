@@ -1,0 +1,232 @@
+.log-counter-testimonial-section {
+	margin: 0 auto;
+	overflow: hidden;
+	max-width: 1920px;
+	padding-right: 30px;
+	@media #{$lg,$md,$sm,$xs} {
+		padding-right: 0;
+	}
+	&:before {
+		bottom: 0;
+		right: 0;
+		width: 65%;
+		content: '';
+		height: 630px;
+		position: absolute;
+		background-color: #262626;
+		@media #{$xxxl} {
+			width: 85%;
+		}
+		@media #{$xxl,$xl} {
+			width: 90%;
+		}
+		@media #{$xl,$lg,$md,$sm,$xs} {
+			display: none;
+		}
+	}
+}
+.log-counter-testimonial-content {
+	@media #{$xl,$lg,$md,$sm,$xs} {
+		flex-wrap: wrap;
+	}
+}
+.log-counter-content-6 {
+	z-index: 1;
+	width: 100%;
+	max-width: 560px;
+	margin-left: 14%;
+	flex-wrap: wrap;
+	padding: 30px;
+	@media #{$xxxl} {
+		margin-left: 5%;
+	}
+	@media #{$xxl,$xl} {
+		margin-left: 0%;
+	}
+	@media #{$xl,$lg,$md,$sm,$xs} {
+		margin: 0 auto;
+		max-width: 750px;
+	}
+	@media #{$xs} { 
+		flex-wrap: wrap;
+	}
+	.background_overlay {
+		opacity: .7;
+		z-index: -1;
+		background-color: var(--log-base-color)
+	}
+	.counter-item-6 {
+		width: 50%;
+		padding-top: 25px;
+		text-align: center;
+		position: relative;
+		margin-bottom: 110px;
+		@media #{$xxl,$xl,$lg,$md,$sm,$xs} {
+			margin-bottom: 50px;
+		}
+		@media #{$xs} { 
+			width: 100%;
+		}
+		&:before,
+		&:after {
+			top: 50%;
+			right: 0;
+			width: 2px;
+			height: 100%;
+			content: '';
+			position: absolute;
+			transform: translateY(-50%);
+			background-color: rgba(255, 255, 255, 0.4);
+			@media #{$xxxl,$xxl,$xl,$lg,$md,$sm,$xs} {
+				display: none;
+			}
+		}
+		&:after {
+			left: 0;
+			top: auto;
+			width: 85%;
+			height: 2px;
+			right: auto;
+			bottom: -60px;
+			transform: translateY(0);
+		}
+		&:nth-child(3),
+		&:nth-child(5) {
+			&:before {
+				display: none;
+			}
+		}
+		&:nth-child(3) {
+			&:after {
+				right: 0;
+				left: auto;
+			}
+		}
+		&:nth-child(4),
+		&:nth-child(5) {
+			margin-bottom: 0;
+			&:after {
+				display: none;
+			}
+		}
+		.item-icon {
+			margin-bottom: 10px;
+			@media #{$xxl,$xl,$lg,$md,$sm,$xs} {
+				margin-bottom: 5px;
+			}
+			i {
+				color: #fff;
+				font-size: 80px;
+				@media #{$xxl,$xl,$lg,$md,$sm,$xs} {
+					font-size: 60px;
+				}
+			}
+		}
+		.item-text {
+			h3 {
+				color: #fff;
+				font-size: 52px;
+				font-weight: 900;
+				@media #{$xxl,$xl,$lg,$md,$sm,$xs} {
+					font-size: 40px;
+				}
+			}
+			p {
+				color: #fff;
+				font-size: 22px;
+				font-weight: 500;
+				@media #{$xxl,$xl,$lg,$md,$sm,$xs} {
+					font-size: 18px;
+				}
+			}
+		}
+	}
+}
+.log-testimonial-wrap-6 {
+	width: 100%;
+	max-width: 1050px;
+	@media #{$xxl,$xl} {
+		max-width: 910px;
+	}
+	@media #{$xl,$lg,$md,$sm,$xs} {
+		margin: 0 auto;
+	}
+
+	.log-testimonial-slider-wrap-4 {
+		padding-bottom: 0;
+		background-color: transparent;
+	}
+	.log-testimonial-item-4 .log-testimonial-text .log-testimonial-desc {
+		color: #fff;
+		font-weight: 400;
+		font-size: 25px;
+		@media #{$xxl,$xl,$lg,$md,$sm,$xs} {
+			font-size: 22px;
+		}
+	}
+	.log-testimonial-item-4 .log-testimonial-text {
+		max-width: 580px;
+		@media #{$xxl,$xl} {
+			max-width: 480px;
+		}
+		@media #{$lg,$md,$sm,$xs} { 
+			max-width: 100%;
+		}
+	}
+	.log-testimonial-slider-wrap-4:before {
+		display: none;
+	}
+	.swiper-slide-active .log-testimonial-item-4 .log-testi-author:before {
+		width: 60%;
+		@media #{$xxl,$xl,$lg,$md,$sm,$xs} {
+			display: none;
+		}
+	}
+	.log-testimonial-item-4 .log-testimonial-text .log-testi-author span {
+		color: #fff;
+	}
+	.log-testimonial-item-4 {
+		gap: 40px;
+	}
+	.log-testimonial-item-4 .log-testimonial-img .item-img {
+		overflow: hidden;
+	}
+	.log-testi-slider-nav-5 {
+		top: 50%;
+		right: -25px;
+		z-index: 2;
+		text-align: center;
+		transform: translateY(-50%);
+		@media #{$lg,$md,$sm,$xs} { 
+			position: static !important;
+			transform: translateY(0) rotate(90deg);
+		}
+		@media #{$xs} { 
+			width: 100%;
+		}
+		.testi-nav {
+			font-size: 30px;
+			color: var(--log-base-color);
+		}
+		.swiper-pagination-bullet {
+			opacity: 1;
+			width: 50px;
+			height: 50px;
+			display: block;
+			font-size: 30px;
+			font-weight: 500;
+			text-align: center;
+			transition: all 500ms ease;
+			color: rgba(255, 255, 255, 0.5);
+			background-color: transparent;
+			font-family: var(--log-heading-2);
+			@media #{$lg,$md,$sm,$xs} { 
+				display: none;
+			}
+			&.swiper-pagination-bullet-active {
+				color: rgba(255, 255, 255, 1);
+				background-color: var(--log-base-color);
+			}
+		}
+	}
+}

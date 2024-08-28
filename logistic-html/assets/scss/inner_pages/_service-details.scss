@@ -1,0 +1,46 @@
+.log-service-details-text {
+	.thumb-img {
+		overflow: hidden;
+		border-radius: 10px;
+		margin-bottom: 30px;
+		display: inline-block;
+	}
+	h2 {
+		font-size: 44px;
+		font-weight: 800;
+		padding-bottom: 20px;
+		color: var(--log-title-color);
+	}
+	p {
+		padding-bottom: 20px;
+	}
+	h3 {
+		font-size: 32px;
+		font-weight: 800;
+		padding-bottom: 20px;
+		color: var(--log-title-color);
+	}
+	.service-details-list {
+		margin-top: 15px;
+		margin-bottom: 30px;
+		.item-list {
+			li {
+				margin-bottom: 15px;
+				i {
+					color: var(--log-base-color);
+					margin-right: 10px;
+				}
+			}
+		}
+	}
+	.service-details-img-list {
+		margin-bottom: 30px;
+		.item-img {
+			overflow: hidden;
+			border-radius: 10px;
+		}
+	}
+	.log-faq-accordion-area {
+		max-width: 100%;
+	}
+}

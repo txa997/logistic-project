@@ -1,0 +1,258 @@
+@keyframes log_icon_shake {
+	0% {
+		transform: rotate(0)scale(1)skew(1deg)
+	}
+
+	10% {
+		transform: rotate(-15deg)scale(1)skew(1deg)
+	}
+
+	20% {
+		transform: rotate(30deg)scale(1)skew(1deg)
+	}
+
+	30% {
+		transform: rotate(-15deg)scale(1)skew(1deg)
+	}
+
+	40% {
+		transform: rotate(30deg)scale(1)skew(1deg)
+	}
+
+	100%,50% {
+		transform: rotate(0)scale(1)skew(1deg)
+	}
+}
+.log-about-section-1 {
+	overflow: hidden;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.log-about-content-1 {
+	gap: 45px;
+	justify-content: space-between;
+	@media #{$xl,$lg,$md,$sm,$xs} {
+		gap: 45px 30px;
+	}
+	@media #{$lg,$md,$sm,$xs} {
+		flex-wrap: wrap;
+		justify-content: center !important;
+	}
+}
+.log-about-img-1 {
+	width: 100%;
+	max-width: 650px;
+	.inner-img-1 {
+		max-width: 540px;
+		overflow: hidden;
+		border-top-left-radius: 200px;
+		border-bottom-right-radius: 200px;
+		@media #{$xs} { 
+			text-align: center;
+		}
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+	.inner-img-2 {
+		z-index: 2;
+		overflow: hidden;
+		position: relative;
+		margin-top: -115px;
+		border-bottom-left-radius: 80px;
+		@media #{$xs} { 
+			display: none;
+		}
+
+	}
+	.inner-img-3 {
+		right: 0;
+		z-index: 3;
+		width: 470px;
+		bottom: 140px;
+		height: 275px;
+		overflow: hidden;
+		transition: all 1000ms ease;
+		border-top-right-radius: 150px;
+		border-bottom-right-radius: 150px;
+		video {
+			width: 100%;
+			height: 100%;
+			border-top-right-radius: 150px;
+			border-bottom-right-radius: 150px;
+		}
+		@media #{$xs} { 
+			width: 100%;
+			border-radius: 0;
+			margin-top: 40px;
+			position: static !important;
+			video {
+				border-radius: 0;
+			}
+		}
+	}
+	&.active {
+		.inner-img-3 {
+			transition-delay: 1000ms;
+		}
+	}
+}
+.log-about-text-1 {
+	width: 100%;
+	max-width: 590px;
+	.log-section-title-1 {
+		max-width: 580px;
+	}
+}
+.log-about-list-item {
+	gap: 20px;
+	@media #{$xs} { 
+		flex-wrap: wrap;
+	}
+}
+.log-about-exp-text {
+	width: 160px;
+	height: 160px;
+	border-radius: 100%;
+	background-color: rgb(255, 255, 255);
+	box-shadow: 0px 0px 90px 0px rgba(19, 19, 19, 0.07);
+	svg {
+		width: 134px;
+		height: 134px;
+		.round-text {
+			color: #212121;
+			font-size: 20px;
+			font-weight: 800;
+		}
+	}
+}
+.log-about-list-area {
+	width: 100%;
+	max-width: 330px;
+	padding: 35px 50px;
+	border-radius: 150px;
+	background-color: rgb(255, 255, 255);
+	box-shadow: 0px 0px 90px 0px rgba(19, 19, 19, 0.07);
+	@media #{$xxs} { 
+		padding: 35px 15px;
+		border-radius: 20px;
+	}
+	li {
+		color: #000000;
+		font-size: 19px;
+		font-weight: 800;
+		margin-bottom: 6px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+		i {
+			margin-right: 10px;
+			color: var(--log-base-color);
+		}
+	}
+}
+.log-about-cta-grp {
+	gap: 30px 35px;
+	.log-about-cta {
+		gap: 15px;
+		max-width: 320px;
+		.inner-icon {
+			width: 72px;
+			height: 72px;
+			border-radius: 100%;
+			border: 8px solid #fedfd2;
+			background-color: var(--log-base-color);
+			i {
+				color: #000000;
+				animation: log_icon_shake 1.8s ease-out infinite;
+			}
+		}
+		.inner-text {
+			max-width: 190px;
+			span {
+				color: #000000;
+				font-size: 17px;
+				font-weight: 800;
+				display: block;
+			}
+			a {
+				color: #000000;
+				font-size: 21px;
+				font-weight: 800;
+			}
+			&.ver_2 {
+				span {
+					font-size: 15px;
+					font-weight: 500;
+				}
+				a {
+					color: #023240;
+					font-size: 20px;
+					font-weight: 900;
+				}
+			}
+		}
+		&.ver_2 {
+			gap: 0;
+			.inner-icon {
+				background-color: #fff;
+				border: 8px solid #4e5a56;
+				i {
+					color: var(--log-base-color);
+				}
+			}
+			.inner-text {
+				span {
+					color: #ff3838;
+					font-weight: 700;
+				}
+				a {
+					color: #fff;
+				}
+			}
+		}
+		&.ver_3 {
+			gap: 20px;
+			.inner-icon {
+				width: 60px;
+				height: 60px;
+				border: none;
+				background-color: transparent;
+				i {
+					font-size: 60px;
+					color: var(--log-base-color);
+				}
+			}
+			.inner-text {
+				max-width: 215px;
+				a {
+					font-size: 22px;
+					font-weight: 700;
+					color: var(--log-title-color-2);
+				}
+				span {
+					color: var(--log-base-color);
+				}
+			}
+		}
+		&.ver_4 {
+			.inner-icon {
+				border: none;
+				i {
+					color: #fff;
+					font-size: 30px;
+				}
+			}
+			.inner-text {
+				span {
+					color: var(--log-base-color);
+				}
+				a {
+					color: #fff;
+				}
+			}
+		}
+	}
+}

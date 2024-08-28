@@ -1,0 +1,143 @@
+.log-project-section-4 {
+	margin: 0 auto;
+	overflow: hidden;
+	max-width: 1920px;
+	.log-section-title-3 {
+		margin: 0 auto;
+		max-width: 720px;
+	}
+}
+.log-project-item-4 {
+	overflow: hidden;
+	max-width: 550px;
+	margin: 0px 10px;
+	display: inline-block;
+	@media #{$xs} { 
+		max-width: 300px;
+	}
+	.item-img {
+		overflow: hidden;
+		img {
+			transition: all 500ms ease;
+		}
+	}
+	&:before {
+		left: 0;
+		width: 100%;
+		content: '';
+		z-index: 1;
+		height: 100%;
+		bottom: -150px;
+		position: absolute;
+		transform-origin: bottom;
+		transform: translateY(100%);
+		transition: all 500ms ease;
+		background: linear-gradient(180deg, rgba(236, 57, 0, 0) 0%, #EC3900 100%);
+		@media #{$xs} { 
+			bottom: -50px;
+		}
+	}
+	.item-text {
+		left: 0;
+		right: 0;
+		z-index: 2;
+		bottom: 40px;
+		margin: 0 auto;
+		max-width: 85%;
+		@media #{$xs} { 
+			bottom: 20px;
+		}
+		.pro-cate {
+			opacity: 0;
+			visibility: hidden;
+			margin-bottom: 10px;
+			display: inline-block;
+			transform: translateX(25px);
+			transition: all 500ms ease;
+			a {
+				color: #fff;
+				font-size: 18px;
+				font-weight: 700;
+				padding: 12px 25px;
+				border-radius: 100px;
+				display: inline-block;
+				font-family: var(--log-heading-2);
+				background-color: var(--log-base-color);
+				@media #{$xs} { 
+					font-size: 14px;
+					padding: 6px 15px;
+				}
+
+			}
+		}
+		.project_title {
+			opacity: 0;
+			visibility: hidden;
+			color: #fff;
+			font-size: 36px;
+			font-weight: 800;
+			padding-bottom: 20px;
+			transform: translateX(25px);
+			transition: all 500ms ease;
+			@media #{$xs} { 
+				font-size: 20px;
+			}
+		}
+		ul {
+			li {
+				opacity: 0;
+				visibility: hidden;
+				color: #fff;
+				margin-bottom: 10px;
+				transform: translateX(25px);
+				transition: all 500ms ease;
+				i {
+					margin-right: 10px;
+					@media #{$xs} { 
+						margin-right: 5px;
+					}
+				}
+				@media #{$xs} { 
+					font-size: 16px;
+				}
+			}
+		}
+	}
+	&:hover {
+		&:before {
+			transform: translateY(0%);
+		}
+		.item-img {
+			img {
+				transform: scale(1.05);
+			}
+		}
+		.item-text {
+			.pro-cate {
+				opacity: 1;
+				visibility: visible;
+				transform: translateX(0px);
+				transition-delay: 300ms;
+			}
+			.project_title {
+				opacity: 1;
+				visibility: visible;
+				transform: translateX(0px);
+				transition-delay: 400ms;
+			}
+			ul {
+				li {
+					opacity: 1;
+					visibility: visible;
+					transform: translateX(0px);
+					&:nth-child(1) {
+						transition-delay: 500ms;
+					}
+					&:nth-child(2) {
+						transition-delay: 600ms;
+					}
+				}
+			}
+		}
+	}
+}

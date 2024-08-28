@@ -1,0 +1,59 @@
+/* 
+    laa-header-start
+*/
+.laa-header-1 {
+    &-area {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    &-top {
+        background: var(--laa-clr-h1);
+        border-radius: 0 0 15px 16px;
+
+        &-flex {
+            gap: 20px;
+            justify-content: space-between;
+        }
+
+        &-contact {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 0;
+            display: flex;
+            align-items: center;
+
+            li {
+                font-size: 14px;
+                color: #fff;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                border-right: 1px solid rgb(255 255 255 / 24%);
+                padding: 7px 20px;
+
+                &:nth-child(1) {
+                    border-left: 1px solid rgb(255 255 255 / 24%);
+                }
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    transition: .3s ease-in-out;
+
+                    &:hover {
+                        color: var(--laa-clr-pr-1);
+                        transform: translateX(-3px);
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+
+/* 
+    laa-header-end
+*/
