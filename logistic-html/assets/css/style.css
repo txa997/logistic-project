@@ -14,7 +14,6 @@ Font load
 ===========*/
 @import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 :root {
   --log-body-color: #6A6A6A;
   --log-heading: "Urbanist", sans-serif;
@@ -25,15 +24,6 @@ Font load
   --log-base-color-2: #ff5c01;
   --log-title-color: #183e38;
   --log-title-color-2: #1A3D38;
-  /* 
-  	laa-veriable
-  */
-  --laa-heading-font-1: "Inter", sans-serif;
-  --laa-para-font-1: "Inter", sans-serif;
-  --laa-clr-pr-1: #27AAE2;
-  --laa-clr-sd-1: #F62459;
-  --laa-clr-h1: #1A2D4E;
-  --laa-clr-para-1: #222222;
 }
 
 .log-header-section {
@@ -2121,7 +2111,7 @@ body {
   -moz-osx-font-smoothing: antialiased;
   -webkit-font-smoothing: antialiased;
 }
-body .container {
+body:not(.laa-home) .container {
   max-width: 1330px;
 }
 body .split-line {

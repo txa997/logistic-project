@@ -1,0 +1,171 @@
+/* 
+    laa-hero-1-start
+*/
+
+
+.laa-hero-1 {
+
+    &-area {
+        position: relative;
+        z-index: 1;
+    }
+
+    &-slider {
+        overflow: hidden;
+        border-radius: 20px;
+
+        &-item {
+
+            &-bg {
+                position: relative;
+                z-index: 1;
+                padding: 192px 0;
+
+                .item-bg {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    z-index: -1;
+    
+                    &::after {
+                        content: "";
+                        width: 60%;
+                        height: 100%;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        background: linear-gradient(90deg, rgba(26, 45, 78, 1) 35%, rgba(0, 212, 255, 0) 100%);
+                    }
+                }
+
+                .bg-shape {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                }
+            }
+
+            &-content {
+                max-width: 640px;
+
+                .hero-title {
+                    color: #fff;
+                    margin-bottom: 28px;
+
+                    @media #{$xl} {
+                        font-size: 60px;
+                    }
+
+                    @media #{$lg} {
+                        font-size: 55px;
+                    }
+                }
+
+                .hero-disc {
+                    color: #fff;
+                    margin-bottom: 32px;
+                    opacity: 88%;
+                }
+            }
+        }
+
+        &-btn-wrap {
+            text-align: right;
+            margin-right: 422px;
+
+            @media #{$md,$xs} {
+                margin-right: 0px;
+            }
+        }
+    }
+
+    &-social {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 75px;
+        left: 50px;
+        z-index: 1;
+        gap: 12px;
+
+        @media #{$xxxl} {
+            left: 20px;
+        }
+
+        @media #{$xxl,$xl,$lg,$md,$xs} {
+            display: none;
+        }
+
+        &::after {
+            content: "";
+            width: 2px;
+            height: 150%;
+            background: #fff;
+            position: absolute;
+            top: 100%;
+            left: 22px;
+            opacity: 12%;
+        }
+
+        &-link {
+            display: inline-flex;
+            gap: 8px;
+            align-items: center;
+            overflow: hidden;
+            font-family: var(--laa-h-font-1);
+            font-size: 13px;
+            letter-spacing: 1px;
+            text-transform: capitalize;
+            font-weight: 500;
+            line-height: 1;
+            color: #fff;
+
+
+            .icon {
+                width: 44px;
+                height: 44px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                border: 2px solid rgb(255 255 255 / 12%);
+                color: rgb(255 255 255 / 64%);
+                background: var(--laa-clr-h1);
+                transition: .3s ease-in-out;
+                font-size: 16px;
+            }
+
+            .text {
+                display: inline-block;
+                overflow: hidden;
+                span {
+                    display: inline-block;
+                    transform: translateX(-125%);
+                    transition: .3s ease-in-out;
+                }
+
+            }
+
+            &:hover {
+                color: #fff;
+                .icon {
+                    border-color: #fff;
+                    color: #fff;
+                }
+                .text {
+                    span {
+                        transform: translateX(0%);
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+
+/* 
+    laa-hero-1-end
+*/

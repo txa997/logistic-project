@@ -1,0 +1,153 @@
+/* 
+    laa-services-1-start
+*/
+.laa-services-1 {
+    &-area {
+        margin-top: -200px;
+    }
+
+    &-slider {
+        max-width: 418px;
+        margin-left: auto;
+        box-shadow: -12px 12px 64px 0 rgba(0,0,0,.04);
+        background: rgb(255 255 255 / 80%);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        position: relative;
+        z-index: 2;
+
+        &-item {
+            padding: 44px 44px;
+            padding-bottom: 36px;
+
+            .text-right {
+                text-align: right;
+            }
+
+            .item-btn {
+                display: inline-block;
+            }
+
+            .item-subtitle {
+                font-size: 16px;
+                color: var(--laa-clr-sd-1);
+                margin-bottom: 28px;
+            }
+
+            .item-title {
+                font-size: 32px;
+                line-height: 1.25;
+                transition: .2s ease ;
+                margin-bottom: 32px;
+                
+                a {
+                    // transition: .2s ease-in ;
+                }
+
+                span {
+                    color: var(--laa-clr-sd-1);
+                }
+
+                &:hover {
+                    transform: translateX(3px);
+                    color: var(--laa-clr-sd-1);
+                }
+            }
+
+
+
+            .item-line {
+                height: 1px;
+                background: rgb(26 45 78 / 12%);
+                position: relative;
+                z-index: 1;
+                margin-bottom: 24px;
+
+                &::after {
+                    content: "";
+                    width: 21px;
+                    height: 3px;
+                    position: absolute;
+                    right: 34px;
+                    top: -1px;
+                    background: var(--laa-clr-h1);
+                    opacity: 100%;
+                }
+            }
+
+            .content-wrap {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 15px;
+                flex-wrap: wrap;
+
+                .item-disc {
+                    font-size: 16px;
+                    opacity: 80%;
+                }
+            }
+
+            .item-counter {
+                font-size: 14px;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                letter-spacing: -1px;
+                font-weight: 400;
+
+                span {
+                    opacity: 56%;
+
+                    &:nth-child(1) {
+                        opacity: 100%;
+                        font-size: 18px;
+                        font-weight: 600;
+                    }
+                }
+            }
+
+            .item-fadeup {
+                transform: translateY(30%);
+                display: block;
+                opacity: 0;
+                transition: .5s ease-in;
+                transition-delay: 0s;
+            }
+        }
+
+        .swiper-container {
+            .swiper-wrapper {
+                .swiper-slide {
+                    &:is(.swiper-slide-active) {
+                        .laa-services-1-slider-item {
+                            .item-fadeup {
+                                transform: translateY(0);
+                                opacity: 1;
+
+                                &:nth-child(1) {
+                                    transition-delay: .5s;
+                                }
+
+                                &:nth-child(2) {
+                                    transition-delay: .6s;
+                                }
+
+                                &:nth-child(3) {
+                                    transition-delay: .7s;
+                                }
+                                &:nth-child(5) {
+                                    transition-delay: .8s;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* 
+    laa-services-1-end
+*/
