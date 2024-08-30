@@ -18,7 +18,7 @@
     align-content: center;
     justify-content: center;
     gap: 5px;
-    transition: all .3s ease-in-out;
+    transition: all .5s var(--laa-cube-1);
 
     span {
         display: inline-block;
@@ -27,7 +27,7 @@
         height: 5px;
         background: var(--laa-clr-h1);
         border-radius: 50%;
-        transition: all .3s ease-in-out;
+        transition: all .5s  var(--laa-cube-1);
     }
 
     &:hover {
@@ -72,10 +72,10 @@
     padding-right: 96px;
     border-right: 1px solid rgba(255, 255, 255, 0.24);
     border-left: 1px solid rgba(255, 255, 255, 0.24);
-    transition: .3s ease-in-out;
+    transition: all .5s  var(--laa-cube-1);
 
     i {
-        transition: .3s ease-in-out;
+        transition: .5s  var(--laa-cube-1);
         color: var(--laa-clr-pr-1);
     }
 
@@ -208,7 +208,7 @@
     padding-left: 22px;
     border-radius: 16px;
     font-weight: 600;
-    transition: all .3s ease-in-out;
+    transition: all .5s  var(--laa-cube-1);
 
     .text {
         position: relative;
@@ -223,7 +223,7 @@
             opacity: 0;
             width: 100%;
             display: block;
-            transition: all 0.3s ease-in-out;
+            transition: all .5s  var(--laa-cube-1);
             position: absolute;
             content: attr(data-back);
             transform: translateY(100%);
@@ -234,7 +234,7 @@
             left: 0;
             opacity: 1;
             display: block;
-            transition: all 0.3s ease-in-out;
+            transition: all .5s  var(--laa-cube-1);
             position: relative;
             content: attr(data-front);
             transform: translateY(0);
@@ -254,13 +254,14 @@
         position: relative;
         z-index: 1;
         overflow: hidden;
+        transition: all .5s  var(--laa-cube-1);
 
         i {
             left: 50%;
             top: 50%;
             transform: translate(-50% , -50%);
             position: absolute;
-            transition: .3s ease-in-out;
+            transition: all .5s  var(--laa-cube-1);
 
             &:nth-child(1) {
                 left: -20%;
@@ -278,7 +279,7 @@
             }
             &::before {
                 opacity: 0;
-                transform: translateY(-240%);
+                transform: translateY(-100%);
             }
         }
 

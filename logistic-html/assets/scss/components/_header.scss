@@ -56,7 +56,7 @@
                     display: flex;
                     align-items: center;
                     gap: 8px;
-                    transition: .3s ease-in-out;
+                    transition: .3s var(--laa-cube-1);
 
                     &:hover {
                         color: var(--laa-clr-pr-1);
@@ -88,6 +88,10 @@
             flex: 0 0 auto;
             max-width: 220px;
             width: 100%;
+
+            @media #{$lg} {
+              max-width: 160px;
+            }
         }
 
         &-action-link {
@@ -214,6 +218,10 @@
           transform: translateY(15px) translateZ(0);
           transition: opacity 0.4s cubic-bezier(0.19, 1, 0.22, 1), visibility 0.4s cubic-bezier(0.19, 1, 0.22, 1), transform 0.4s cubic-bezier(0.19, 1, 0.22, 1);
           
+          @media #{$lg} {
+            min-width: 200px;
+          }
+
           li {
             display: block;
             margin: 0;
