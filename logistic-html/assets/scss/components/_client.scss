@@ -1,0 +1,86 @@
+/* 
+    laa-client-css-start
+*/
+.laa-client-1 {
+
+    &-area {
+        margin-top: -185px;
+
+        @media #{$md,$xs} {
+            margin-top: 0;
+            padding-top: 100px;
+        }
+    }
+
+    &-wrap {
+        max-width: 868px;
+
+        @media #{$xl} {
+            max-width: 674px;
+        }
+
+        @media #{$lg} {
+            max-width: 504px;
+        }
+    }
+
+    &-title {
+        font-size: 18px;
+        font-weight: 500;
+        opacity: 80%;
+        margin-bottom: 32px;
+    }
+    &-slider {
+        padding: 0 70px;
+
+        &-item {
+            position: relative;
+            z-index: 1;
+
+            img {
+                transition: all 1s var(--laa-cube-1);
+                opacity: 84%;
+                &:nth-child(1) {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: 1;
+                    clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+                }
+            }
+
+            &:hover {
+                img {
+                    opacity: 100%;
+                    &:nth-child(1) {
+                        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+                    }
+                }
+            }
+
+        }
+
+        &-btn {
+            .laa-left-btn-2 {
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+                z-index: 1;
+            }
+            .laa-right-btn-2 {
+                position: absolute;
+                top: 50%;
+                right: 0;
+                transform: translateY(-50%);
+                z-index: 1;
+            }
+        }
+
+    }
+    
+}
+
+/* 
+    laa-client-css-end
+*/

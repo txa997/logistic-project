@@ -79,6 +79,14 @@
                 margin-right: 0px;
             }
         }
+
+        &-btn {
+            position: absolute;
+            bottom: 4px;
+            width: 100%;
+            left: 0px;
+            z-index: 1;
+        }
     }
 
     &-social {

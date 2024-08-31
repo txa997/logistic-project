@@ -9,7 +9,9 @@ Last change:    00/00/00
 ;(function($) {
 
 	"use strict";
-	const lenis = new Lenis()
+	const lenis = new Lenis({
+		duration: .5,	
+	})
 	function raf(time) {
 		lenis.raf(time)
 		requestAnimationFrame(raf)

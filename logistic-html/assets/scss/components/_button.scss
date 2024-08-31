@@ -193,7 +193,10 @@
 /* 
     pr-btn-1-start
 */
+
 .laa-pr-btn-1 {
+    border: none;
+    outline: none;
     display: inline-flex;
     flex: 0 0 auto;
     gap: 34px;
@@ -298,6 +301,65 @@
 }  
 
 
+/* 
+    laa-circle-progress
+*/
+
+.laa-progress-btn {
+    width: 64px;
+    display: inline-block;
+    height: 64px;
+    position: relative;
+    z-index: 1;
+
+    &-circle {
+        width: 64px;
+        height: 64px;
+
+        circle {
+
+            &:nth-child(1) {
+                r: 30;
+                cx: 32;
+                cy: 32;
+                fill: transparent;
+                stroke: var(--laa-clr-sd-1);
+                stroke-width: 2px;
+                stroke-dasharray: 200px;
+                stroke-dashoffset: 0;
+                opacity: 16%;
+            }
+
+            &:nth-child(2) {
+                r: 30;
+                cx: 32;
+                cy: 32;
+                fill: transparent;
+                stroke: var(--laa-clr-sd-1);
+                stroke-width: 4px;
+                stroke-dasharray: 200px;
+                stroke-dashoffset: 200px;
+            }
+
+
+        }
+    }
+
+    &-icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        transition: all .5s var(--laa-cube-1);
+    }
+
+    &:hover {
+        .laa-progress-btn-icon {
+            top: 45%;
+            left: 55%;
+        }
+    }
+}
 
 
 

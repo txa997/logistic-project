@@ -1,0 +1,126 @@
+/* 
+    laa-about-start
+*/
+.laa-about-1 {
+
+    &-area {
+        padding-top: 300px;
+        padding-bottom: 205px;
+
+        @media #{$md,$xs} {
+            padding-top: 120px;
+            padding-bottom: 120px;
+        }
+    }
+
+    &-content {
+        max-width: 710px;
+
+        @media #{$lg} {
+            max-width: 600px;
+        }
+    }
+
+    &-feature {
+        max-width: 458px;
+        margin-bottom: 48px;
+
+        &-item {
+            display: flex;
+            align-items: center;
+            gap: 28px;
+            
+            &:not(:last-child) {
+                margin-bottom: 40px;
+
+            }
+
+            .item-icon {
+                max-width: 90px;
+                flex: 0 0 auto;
+                width: 100%;
+                transition: all 1s var(--laa-cube-1);
+            }
+
+            .item-disc {
+                font-size: 20px;
+                line-height: 30px;
+                font-weight: 500;
+
+                @media #{$xl,$lg,$md,$xs} {
+                    font-size: 18px;
+                }
+            }
+
+            &:hover {
+                .item-icon {
+                    transform: rotate(-10deg);
+                }
+            }
+            
+        }
+    }
+
+
+    &-ship {
+        &-box {
+            text-align: right;
+            position: absolute;
+            right: 0;
+            top: 100px;
+            z-index: -1;
+            width: 40%;
+
+            @media #{$xl,$lg} {
+                top: 260px;
+                width: 33%;
+            }
+
+            @media #{$md,$xs} {
+                display: none;
+            }
+
+            &-cirle {
+                text-align: right;
+            }
+
+            &-ship {
+                width: 100%;
+                position: absolute;
+                right: 18%;
+                bottom: -90px;
+
+                @media #{$xxl,$xl,$lg,$md,$xs} {
+                    bottom: 40px;
+                }
+            }
+        }
+    }
+    
+    &-bg-shape {
+        width: 46%;
+        position: absolute;
+        right: 0%;
+        top: 1%;
+        z-index: -2;
+    }
+
+
+    &-ani-shape {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: -1;
+
+        &-svg {
+            margin-left: 70px;
+        }
+    }
+    
+}
+
+
+/* 
+    laa-about-end
+*/

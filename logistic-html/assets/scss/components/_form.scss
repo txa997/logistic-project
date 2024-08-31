@@ -1,0 +1,199 @@
+/* 
+    laa-form-start
+*/
+.laa-form-1 {
+
+    &-box {
+        max-width: 385px;
+        position: relative;
+        z-index: 1;
+
+        &::after {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+            top: 8px;
+            left: -8px;
+            z-index: -1;
+            background: rgb(255 255 255 / 8%);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            box-shadow: -12px 12px 64px 0 rgba(0,0,0,.12);
+
+            clip-path: polygon(calc(100% - 90.142px) 5.85786px, calc(100% - 90.142px) 5.85786px, calc(100% - 91.306261px) 4.78241496px, calc(100% - 92.543968px) 3.80836608px, calc(100% - 93.848407px) 2.93849472px, calc(100% - 95.212864px) 2.17558224px, calc(100% - 96.630625px) 1.52241px, calc(100% - 98.094976px) 0.98175936px, calc(100% - 99.599203px) 0.55641168px, calc(100% - 101.136592px) 0.24914832px, calc(100% - 102.700429px) 0.06275064px, calc(100% - 104.284px) 7.791751724191E-32px, 20px 0px, 20px 0px, 16.75589733px 0.2617661px, 13.67845504px 1.0196128px, 10.80885071px 2.2323627px, 8.18826192px 3.8588384px, 5.85786625px 5.8578625px, 3.85884128px 8.1882576px, 2.23236459px 10.8088463px, 1.01961376px 13.6784512px, 0.26176637px 16.7558949px, 3.3111117619826E-31px 20px, 0px calc(100% - 20px), 0px calc(100% - 20px), 0.26176637px calc(100% - 16.755822px), 1.01961376px calc(100% - 13.678336px), 2.23236459px calc(100% - 10.808714px), 3.85884128px calc(100% - 8.1881279999999px), 5.85786625px calc(100% - 5.85775px), 8.18826192px calc(100% - 3.858752px), 10.80885071px calc(100% - 2.232306px), 13.67845504px calc(100% - 1.019584px), 16.75589733px calc(100% - 0.26175799999999px), 20px calc(100% - 1.1368683772162E-13px), calc(100% - 20px) calc(100% - 0px), calc(100% - 20px) calc(100% - 0px), calc(100% - 16.755822px) calc(100% - 0.26175799999987px), calc(100% - 13.678336px) calc(100% - 1.0195839999998px), calc(100% - 10.808714px) calc(100% - 2.232306px), calc(100% - 8.188128px) calc(100% - 3.858752px), calc(100% - 5.85775px) calc(100% - 5.85775px), calc(100% - 3.858752px) calc(100% - 8.1881279999999px), calc(100% - 2.232306px) calc(100% - 10.808714px), calc(100% - 1.019584px) calc(100% - 13.678336px), calc(100% - 0.26175799999999px) calc(100% - 16.755822px), calc(100% - 5.6843418860808E-14px) calc(100% - 20px), calc(100% - 0px) 104.284px, calc(100% - 0px) 104.284px, calc(100% - 0.062746999999945px) 102.7004021px, calc(100% - 0.24913599999996px) 101.1365448px, calc(100% - 0.55638900000002px) 99.5991427px, calc(100% - 0.98172799999998px) 98.0949104px, calc(100% - 1.522375px) 96.6305625px, calc(100% - 2.1755520000001px) 95.2128136px, calc(100% - 2.938481px) 93.8483783px, calc(100% - 3.808384px) 92.5439712px, calc(100% - 4.782483px) 91.3063069px, calc(100% - 5.8580000000001px) 90.1421px, calc(100% - 90.142px) 5.85786px);
+        }
+
+
+    }
+
+    background: rgb(255 255 255 / 72%);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    padding: 40px 40px;
+    border-radius: 20px;
+    box-shadow: -12px 12px 64px 0 rgba(0,0,0,.12);
+    padding-top: 75px;
+    clip-path: polygon(calc(100% - 90.142px) 5.85786px, calc(100% - 90.142px) 5.85786px, calc(100% - 91.306261px) 4.78241496px, calc(100% - 92.543968px) 3.80836608px, calc(100% - 93.848407px) 2.93849472px, calc(100% - 95.212864px) 2.17558224px, calc(100% - 96.630625px) 1.52241px, calc(100% - 98.094976px) 0.98175936px, calc(100% - 99.599203px) 0.55641168px, calc(100% - 101.136592px) 0.24914832px, calc(100% - 102.700429px) 0.06275064px, calc(100% - 104.284px) 7.791751724191E-32px, 20px 0px, 20px 0px, 16.75589733px 0.2617661px, 13.67845504px 1.0196128px, 10.80885071px 2.2323627px, 8.18826192px 3.8588384px, 5.85786625px 5.8578625px, 3.85884128px 8.1882576px, 2.23236459px 10.8088463px, 1.01961376px 13.6784512px, 0.26176637px 16.7558949px, 3.3111117619826E-31px 20px, 0px calc(100% - 20px), 0px calc(100% - 20px), 0.26176637px calc(100% - 16.755822px), 1.01961376px calc(100% - 13.678336px), 2.23236459px calc(100% - 10.808714px), 3.85884128px calc(100% - 8.1881279999999px), 5.85786625px calc(100% - 5.85775px), 8.18826192px calc(100% - 3.858752px), 10.80885071px calc(100% - 2.232306px), 13.67845504px calc(100% - 1.019584px), 16.75589733px calc(100% - 0.26175799999999px), 20px calc(100% - 1.1368683772162E-13px), calc(100% - 20px) calc(100% - 0px), calc(100% - 20px) calc(100% - 0px), calc(100% - 16.755822px) calc(100% - 0.26175799999987px), calc(100% - 13.678336px) calc(100% - 1.0195839999998px), calc(100% - 10.808714px) calc(100% - 2.232306px), calc(100% - 8.188128px) calc(100% - 3.858752px), calc(100% - 5.85775px) calc(100% - 5.85775px), calc(100% - 3.858752px) calc(100% - 8.1881279999999px), calc(100% - 2.232306px) calc(100% - 10.808714px), calc(100% - 1.019584px) calc(100% - 13.678336px), calc(100% - 0.26175799999999px) calc(100% - 16.755822px), calc(100% - 5.6843418860808E-14px) calc(100% - 20px), calc(100% - 0px) 104.284px, calc(100% - 0px) 104.284px, calc(100% - 0.062746999999945px) 102.7004021px, calc(100% - 0.24913599999996px) 101.1365448px, calc(100% - 0.55638900000002px) 99.5991427px, calc(100% - 0.98172799999998px) 98.0949104px, calc(100% - 1.522375px) 96.6305625px, calc(100% - 2.1755520000001px) 95.2128136px, calc(100% - 2.938481px) 93.8483783px, calc(100% - 3.808384px) 92.5439712px, calc(100% - 4.782483px) 91.3063069px, calc(100% - 5.8580000000001px) 90.1421px, calc(100% - 90.142px) 5.85786px);
+
+
+    @media #{$xs} {
+        padding: 40px 20px;
+        padding-top: 75px;
+    }
+
+    .title-line {
+        height: 1px;
+        background: rgb(26 45 78 / 12%);
+        position: relative;
+        z-index: 1;
+        margin-bottom: 40px;
+
+        &::after {
+            content: "";
+            width: 40px;
+            height: 3px;
+            position: absolute;
+            left: 24px;
+            top: -1px;
+            background: var(--laa-clr-h1);
+            opacity: 100%;
+        }
+    }
+
+    &-title {
+        font-size: 32px;
+        line-height: 1;
+        margin-bottom: 38px;
+
+        @media #{$md,$xs} {
+            font-size: 24px;
+        }
+    }
+
+
+    &-input-box {
+        &:not(:last-child) {
+            margin-bottom: 28px;
+        }
+
+        &:focus-within .laa-form-1-label {
+            color: var(--laa-clr-sd-1);
+            opacity: 1;
+        }
+    }
+
+    &-label {
+        font-family: var(--laa-h-font-1);
+        text-transform: capitalize;
+        font-weight: 500;
+        opacity: 72%;
+        color: var(--laa-clr-h1);
+        font-size: 14px;
+        display: block;
+        line-height: 1;
+        margin-bottom: 10px;
+        transition: all .5s var(--laa-cube-1);
+    }
+
+    &-input {
+        font-family: var(--laa-h-font-1);
+        display: block;
+        width: 100%;
+        height: 44px;
+        outline: none;
+        margin: 0;
+        padding: 0px 20px;
+        border-radius: 8px;
+        border: 1px solid rgb(26 45 78 / 20%);
+        background: transparent;
+        font-size: 16px;
+        font-weight: 500;
+        color: var(--laa-clr-h1);
+        transition: all 0.5s var(--laa-cube-1);
+
+        &::placeholder {
+            font-family: var(--laa-h-font-1);
+            font-size: 16px;
+            font-weight: 500;
+            color: var(--laa-clr-h1);
+        }
+
+        &:hover  {
+            border-color: #000;
+        }
+    }
+
+
+
+}
+
+
+.laa-form-1-input-services {
+    font-family: var(--laa-h-font-1);
+    display: block;
+    width: 100%;
+    height: 44px;
+    outline: none;
+    margin: 0;
+    padding: 0px 20px;
+    border-radius: 8px;
+    border: 1px solid rgb(26 45 78 / 20%);
+    background: transparent;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--laa-clr-h1);
+    transition: all 0.5s var(--laa-cube-1);
+
+    &::after {
+        width: 10px;
+        height: 11px;
+        border-color: var(--laa-clr-sd-1);
+        right: 24px;
+        margin-top: -8px;
+    }
+
+    .current {
+        transition: all .3s ease-in-out;
+    }
+
+    &:hover {
+        border-color: #000;
+        .current {
+            color: var(--laa-clr-h1);
+        }
+    }
+
+    .list {
+        height: 127px;
+        overflow: scroll;
+
+        &::-webkit-scrollbar {
+            width: 2px;
+            background-color: transparent;
+            box-shadow: none;
+            border: none;
+        }
+        &::-webkit-scrollbar-track {
+            background: transparent;
+            box-shadow: none;
+            border: none;
+        }
+        &::-webkit-scrollbar-thumb {
+            background: var(--laa-clr-sd-1);
+            border-radius: 30px;
+        }
+
+        li {
+            &:is(.selected) {
+                color: var(--laa-clr-sd-1);
+            }
+        }
+    }
+
+}
+
+
+/* 
+    laa-form-end
+*/

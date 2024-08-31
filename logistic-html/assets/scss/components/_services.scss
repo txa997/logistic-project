@@ -4,21 +4,39 @@
 .laa-services-1 {
     &-area {
         margin-top: -200px;
+
+        @media #{$md,$xs} {
+            margin-top: 0;
+            padding-top: 100px;
+        }
+    }
+
+    &-wrap {
+        max-width: 418px;
+        margin-left: auto;
+        z-index: 2;
     }
 
     &-slider {
-        max-width: 418px;
-        margin-left: auto;
-        box-shadow: -12px 12px 64px 0 rgba(0,0,0,.04);
-        background: rgb(255 255 255 / 80%);
+        box-shadow: -12px 12px 64px 0 rgba(0, 0, 0, 0.04);
+        background: rgba(255, 255, 255, 0.8);
         backdrop-filter: blur(12px);
         -webkit-backdrop-filter: blur(12px);
         position: relative;
         z-index: 2;
+        clip-path: polygon(calc(100% - 0px) calc(50% - 218.5px), calc(100% - 0px) calc(50% - 218.5px), calc(100% - 0.26175799999993px) calc(50% - 221.74410267px), calc(100% - 1.0195839999998px) calc(50% - 224.82154496px), calc(100% - 2.232306px) calc(50% - 227.69114929px), calc(100% - 3.858752px) calc(50% - 230.31173808px), calc(100% - 5.85775px) calc(50% - 232.64213375px), calc(100% - 8.188128px) calc(50% - 234.64115872px), calc(100% - 10.808714px) calc(50% - 236.26763541px), calc(100% - 13.678336px) calc(50% - 237.48038624px), calc(100% - 16.755822px) calc(50% - 238.23823363px), calc(100% - 20px) calc(50% - 238.5px), 128.284px 0px, 128.284px 0px, 126.700429px 0.06275064px, 125.136592px 0.24914832px, 123.599203px 0.55641168px, 122.094976px 0.98175936px, 120.630625px 1.52241px, 119.212864px 2.17558224px, 117.848407px 2.93849472px, 116.543968px 3.80836608px, 115.306261px 4.78241496px, 114.142px 5.85786px, 5.85787px calc(50% - 124.358px), 5.85787px calc(50% - 124.358px), 4.78242225px calc(50% - 123.193739px), 3.8083712px calc(50% - 121.956032px), 2.93849815px calc(50% - 120.651593px), 2.1755844px calc(50% - 119.287136px), 1.52241125px calc(50% - 117.869375px), 0.98176px calc(50% - 116.405024px), 0.55641195px calc(50% - 114.900797px), 0.2491484px calc(50% - 113.363408px), 0.06275065px calc(50% - 111.799571px), 7.791751724191E-32px calc(50% - 110.216px), 0px calc(50% - -218.5px), 0px calc(50% - -218.5px), 0.26176664px calc(50% - -221.744178px), 1.01961472px calc(50% - -224.821664px), 2.23236648px calc(50% - -227.691286px), 3.85884416px calc(50% - -230.311872px), 5.85787px calc(50% - -232.64225px), 8.18826624px calc(50% - -234.641248px), 10.80885512px calc(50% - -236.267694px), 13.67845888px calc(50% - -237.480416px), 16.75589976px calc(50% - -238.238242px), 20px calc(50% - -238.5px), calc(100% - 20px) calc(100% - 0px), calc(100% - 20px) calc(100% - 0px), calc(100% - 16.755822px) calc(100% - 0.26175799999993px), calc(100% - 13.678336px) calc(100% - 1.019584px), calc(100% - 10.808714px) calc(100% - 2.2323060000001px), calc(100% - 8.188128px) calc(100% - 3.858752px), calc(100% - 5.85775px) calc(100% - 5.85775px), calc(100% - 3.858752px) calc(100% - 8.188128px), calc(100% - 2.232306px) calc(100% - 10.808714px), calc(100% - 1.019584px) calc(100% - 13.678336px), calc(100% - 0.26175799999993px) calc(100% - 16.755822px), calc(100% - 5.6843418860808E-14px) calc(100% - 20px), calc(100% - 0px) calc(50% - 218.5px));
 
         &-item {
             padding: 44px 44px;
             padding-bottom: 36px;
+
+            @media #{$xs} {
+                padding: 44px 20px;
+            }
+
+            @media #{$sm} {
+                padding: 44px 44px;
+            }
 
             .text-right {
                 text-align: right;
@@ -39,6 +57,18 @@
                 line-height: 1.25;
                 transition: all .5s  var(--laa-cube-1);
                 margin-bottom: 32px;
+
+                @media #{$lg,$md} {
+                    font-size: 26px;
+                }
+
+                @media #{$xs} {
+                    font-size: 22px;
+                }
+
+                @media #{$sm} {
+                    font-size: 26px;
+                }
                 
                 a {
                     transition: all .5s  var(--laa-cube-1);
@@ -114,6 +144,11 @@
                 transition: all 1s  var(--laa-cube-1);
                 transition-delay: 0s;
             }
+
+            .laa-progress-btn-circle circle:nth-child(2) {
+                transition: all 5.5s linear;
+                transition-delay: 0s;
+            }
         }
 
         .swiper-container {
@@ -140,14 +175,183 @@
                                     transition-delay: 1s;
                                 }
                             }
+
+                            .laa-progress-btn-circle circle:nth-child(2) {
+                                stroke-dashoffset: 0px;
+                                transition-delay: .5s;
+                            }
                         }
                     }
                 }
             }
         }
     }
+
+    &-shape {
+        position: absolute;
+        left: 100%;
+        top: 200px;
+    }
 }
 
 /* 
     laa-services-1-end
+*/
+
+/* 
+    laa-services-2-start
+*/
+
+
+.laa-services-2 {
+
+    &-scn-title {
+        max-width: 980px;
+    }
+
+    &-wrap {
+        .laa-left-btn {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            z-index: 2;
+
+            @media #{$md,$xs} {
+                top: 33%;
+            }
+        }
+
+        .laa-right-btn {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            z-index: 2;
+
+            @media #{$md,$xs} {
+                top: 33%;
+            }
+        }
+    }
+    
+    &-slider {
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 20px;
+
+        @media #{$xs} {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        &-item {
+            padding-top: 270px;
+            padding-bottom: 265px;
+            border-radius: 20px;
+
+            @media #{$xxl,$xl} {
+                padding-left: 100px;
+            }
+
+            @media #{$lg} {
+                padding-left: 60px;
+            }
+
+            @media #{$md,$xs} {
+                padding-top: 100px;
+                padding-bottom: 150px;
+            }
+
+            &::after {
+                content: "";
+                width: 60%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background: linear-gradient(90deg, rgba(26, 45, 78, 1) 35%, rgba(0, 212, 255, 0) 100%);
+                z-index: -1;
+                opacity: 90%;
+            }
+
+            .item-bg {
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                width: 100%;
+                height: 100%;
+            }
+
+            .item-title {
+                font-size: 45px;
+                color: #fff;
+                line-height: 1.177;
+                max-width: 510px;
+
+                
+
+                .clr-pr {
+                    color: var(--laa-clr-sd-1);
+                }
+
+                @media #{$lg,$md} {
+                    font-size: 35px;
+                    max-width: 399px;
+                }
+
+                @media #{$xs} {
+                    font-size: 30px;
+                }
+            }
+
+            .item-subtitle{
+                font-size: 16px;
+                color: var(--laa-clr-pr-1);
+                display: flex;
+                gap: 12px;
+                flex-wrap: wrap;
+                margin-bottom: 27px;
+            }
+            
+
+            .item-ani-shape {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                z-index: 1;
+            }
+        }
+    }
+
+
+    &-form {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        width: 100%;
+        z-index: 2;
+
+        @media #{$md,$xs} {
+            position: unset;
+            transform: unset;
+            padding-top: 50px;
+        }
+
+        .laa-form-1-box {
+            @media #{$xxl,$xl,$lg} {
+                margin-right: 70px;
+            }
+            @media #{$md,$xs} {
+                margin-left: 0px;
+            }
+        }
+    }
+}
+
+
+/* 
+    laa-services-2-end
 */
