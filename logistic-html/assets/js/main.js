@@ -8,15 +8,11 @@ document.addEventListener("DOMContentLoaded", function () {
 				let slider = new Swiper('.laa-hero-1-active', {
 					loop: true,
 					spaceBetween: 0,
-					speed: 500,
+					speed: 1000,
 					autoplay: {
-						delay: 4000000,
+						delay: 4000,
 					},
 
-                    effect: "fade",
-					fadeEffect: {
-						crossFade: true
-					},
 			
 					navigation: {
 						nextEl: ".laa-h1-slider-next",
@@ -27,30 +23,25 @@ document.addEventListener("DOMContentLoaded", function () {
 			}
 
 
-		}, 500);
+		});
 
 	})
 
 });
 
 
-// hero-slider
-if($('.laa-s1-active').length) {
-	let slider = new Swiper('.laa-s1-active', {
-		loop: true,
-		spaceBetween: 0,
-		speed: 1000,
-		autoplay: {
-			delay: 5000,
-		},
+// title-animation
+// gsap.registerPlugin(SplitText);
 
-		// effect: "fade",
-		// fadeEffect: {
-		// 	crossFade: true
-		// },
-
+var txasplit1 = $('.txaa-split-text-1');
+if(txasplit1.length == 0) ; gsap.registerPlugin(SplitText); txasplit1.each(function(index, el) {
+	el.split = new SplitText(el, { 
+	type: "lines",
+	linesClass: "split-line"
 	});
-}
+});
+
+
 
 	
 // client-slider
