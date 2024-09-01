@@ -19,7 +19,7 @@
 
 .laa-para-1 {
     font-family: var(--laa-h-font-1);
-    font-weight: 400;
+    font-weight: 300;
     line-height: 28px;
     font-size: 18px;
     color: var(--laa-clr-p1);
@@ -51,6 +51,10 @@
     font-size: 64px;
     // letter-spacing: -2px;
     margin-bottom: 0;
+
+    &:is(.has-clr-white) {
+        color: #fff;
+    }
 
     .pr-clr {
         color: var(--laa-clr-sd-1);

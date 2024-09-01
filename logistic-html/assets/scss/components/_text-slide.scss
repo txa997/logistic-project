@@ -1,0 +1,41 @@
+/* 
+    text-slide-1-start
+*/
+.laa-slide-text-1 {
+
+    &-area {
+        border-radius: 20px;
+    }
+
+    &-wrap {
+        display: flex;
+        align-items: center;
+        gap: 48px;
+    }
+
+    &-item {
+        font-size: 64px;
+        line-height: 1;
+        display: flex;
+        align-items: center;
+        gap: 48px;
+        flex: 0 0 auto;
+
+        @media #{$xl} {
+            font-size: 60px;
+        }
+
+        @media #{$lg} {
+            font-size: 50px;
+        }
+
+        @media #{$md,$xs} {
+            font-size: 40px;
+        }
+    }
+}
+
+
+/* 
+    text-slide-1-end
+*/

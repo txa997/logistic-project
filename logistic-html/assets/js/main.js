@@ -31,7 +31,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 // title-animation
-// gsap.registerPlugin(SplitText);
 
 var txasplit1 = $('.txaa-split-text-1');
 if(txasplit1.length == 0) ; gsap.registerPlugin(SplitText); txasplit1.each(function(index, el) {
@@ -42,7 +41,56 @@ if(txasplit1.length == 0) ; gsap.registerPlugin(SplitText); txasplit1.each(funct
 });
 
 
+// about-1
+var laa_a1 = gsap.timeline({
 
+	scrollTrigger: {
+	  animation: laa_a1,
+	  trigger: '.laa-about-1-area',
+	  start: "top 50%",
+	  end: "top -20%",
+	  scrub: 3,
+	  toggleActions: "play reverse play reverse",
+	  markers: false
+	}
+});
+	
+laa_a1.from(".laa-about-1-ship-box" , { xPercent: 100 })
+laa_a1.from(".laa-about-1-ship-box-ship" , { xPercent: 100 , scale: .5 })
+
+// animate-1
+var laa_ani1 = gsap.timeline({
+
+	scrollTrigger: {
+	  animation: laa_ani1,
+	  trigger: '.laa-animate-1-wrap',
+	  start: "top 95%",
+	  end: "top 20%",
+	  scrub: 3,
+	  toggleActions: "play reverse play reverse",
+	  markers: false
+	}
+});
+	
+laa_ani1.from(".laa-animate-1-cloud-1" , { xPercent: 100 ,  opacity: 0  })
+laa_ani1.from(".laa-animate-1-cloud-2" , { xPercent: 50 ,  opacity: 0  }, "<=")
+laa_ani1.from(".laa-animate-1-cloud-3" , { xPercent: 100 ,  opacity: 0  }, "<=.1")
+laa_ani1.from(".laa-animate-1-plane" , { xPercent: 100 , yPercent: -100, scale: .3, rotate: -30 , opacity: 0 }, "<=.5")
+
+
+
+// services-1-slider
+if($('.laa-s1-active').length) {
+	let slider = new Swiper('.laa-s1-active', {
+		loop: true,
+		spaceBetween: 0,
+		speed: 1000,
+		autoplay: {
+			delay: 5000,
+		},
+
+	});
+}
 	
 // client-slider
 if($('.laa-c1-active').length) {
@@ -104,22 +152,43 @@ if($('.laa-s2-active').length) {
 
 	});
 }
-
-var laa_a1 = gsap.timeline({
-
-	scrollTrigger: {
-	  animation: laa_a1,
-	  trigger: '.laa-about-1-area',
-	  start: "top 50%",
-	  end: "top -20%",
-	  scrub: 2,
-	  toggleActions: "play reverse play reverse",
-	  markers: false
-	}
-});
 	
-laa_a1.from(".laa-about-1-ship-box" , { xPercent: 100 })
-laa_a1.from(".laa-about-1-ship-box-ship" , { xPercent: 100 , scale: .5 })
+// features-1-slider
+if($('.laa-f1-active').length) {
+	let slider = new Swiper('.laa-f1-active', {
+		loop: true,
+		spaceBetween: 0,
+		speed: 1000,
+		slidesPerView: 1,
+
+		autoplay: {
+			delay: 5000,
+		},
+
+		navigation: {
+			nextEl: ".laa-f1-next",
+			prevEl: ".laa-f1-prev",
+		},
+
+	});
+}
+	
+// text-slide-1
+if($('.text-slide-1-active').length) {
+	$('.text-slide-1-active').marquee({
+		gap: 48,
+		speed: 80,
+		delayBeforeStart: 0,
+		direction: 'left',
+		duplicated: true,
+		pauseOnHover: true,
+		startVisible:true,
+	});
+}
+
+
+
+
 
 // nice-selector
 if($('.nice-select').length) {

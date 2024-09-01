@@ -1,0 +1,197 @@
+/* 
+    laa-feature-1-start
+*/
+.laa-features-1 {
+    &-area {
+        border-radius: 20px;
+    }
+
+
+    &-scn-title {
+        max-width: 750px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &-wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 20px;
+        padding: 0 20px;
+        margin-bottom: 48px;
+
+        @media #{$lg} {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        @media #{$md} {
+            grid-template-columns: 1fr 1fr ;
+        }
+
+        @media #{$xs} {
+            grid-template-columns: 1fr ;
+        }
+    }
+
+    &-item {
+        padding: 48px 48px;
+        border-radius: 16px;
+        box-sizing: border-box;
+        background: radial-gradient(circle at 100% 100%, #1a2d4e 0, #1a2d4e 15px, transparent 15px) 0% 0%/16px 16px no-repeat,
+        radial-gradient(circle at 0 100%, #1a2d4e 0, #1a2d4e 15px, transparent 15px) 100% 0%/16px 16px no-repeat,
+        radial-gradient(circle at 100% 0, #1a2d4e 0, #1a2d4e 15px, transparent 15px) 0% 100%/16px 16px no-repeat,
+        radial-gradient(circle at 0 0, #1a2d4e 0, #1a2d4e 15px, transparent 15px) 100% 100%/16px 16px no-repeat,
+        linear-gradient(#1a2d4e, #1a2d4e) 50% 50%/calc(100% - 2px) calc(100% - 32px) no-repeat,
+        linear-gradient(#1a2d4e, #1a2d4e) 50% 50%/calc(100% - 32px) calc(100% - 2px) no-repeat,
+        linear-gradient(transparent 0%, #27aae266 100%);
+
+
+        @media #{$xxxl,$xxl,$xl,$lg,$md,$xs} {
+            padding: 48px 20px;
+        }
+
+        transition: all .5s var(--laa-cube-1);
+
+        
+        .item-icon {
+            max-width: 78px;
+            height: 78px;
+            margin-bottom: 35px;
+            transition: all .5s var(--laa-cube-1);
+        }
+
+        .item-title {
+            font-size: 23px;
+            color: #fff;
+            transition: all .5s var(--laa-cube-1);
+            margin-bottom: 26px;
+
+            @media #{$xl,$lg,$md,$xs} {
+                font-size: 20px;
+            }
+
+            a {
+                transition: all .5s var(--laa-cube-1); 
+            }
+
+            &:hover {
+                color: var(--laa-clr-sd-1);
+                transform: translateX(3px);
+            }
+        }
+
+        .item-disc {
+            color: #fff;
+            opacity: 72%;
+        }
+
+        &:hover {
+            background: radial-gradient(circle at 100% 100%, #1a2d4e 0, #1a2d4e 15px, transparent 15px) 0% 0%/16px 16px no-repeat,
+            radial-gradient(circle at 0 100%, #1a2d4e 0, #1a2d4e 15px, transparent 15px) 100% 0%/16px 16px no-repeat,
+            radial-gradient(circle at 100% 0, #1a2d4e 0, #1a2d4e 15px, transparent 15px) 0% 100%/16px 16px no-repeat,
+            radial-gradient(circle at 0 0, #1a2d4e 0, #1a2d4e 15px, transparent 15px) 100% 100%/16px 16px no-repeat,
+            linear-gradient(#1a2d4e, #1a2d4e) 50% 50%/calc(100% - 2px) calc(100% - 32px) no-repeat,
+            linear-gradient(#1a2d4e, #1a2d4e) 50% 50%/calc(100% - 32px) calc(100% - 2px) no-repeat,
+            linear-gradient(1deg, transparent 0%, #27aae266 100%);
+
+            .item-icon {
+                transform: rotate(15deg);
+            }
+        }
+    }
+
+    &-video {
+        position: relative;
+        z-index: 1;
+        border-radius: 16px;
+        overflow: hidden;
+
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            transition: all 1s var(--laa-cube-1);
+        }
+
+        &-btn {
+            position: absolute;
+            left: 20px;
+            bottom: 20px;
+        }
+
+        &:hover {
+            video {
+                transform: scale(110%);
+            }
+        }
+    }
+
+    &-slider {
+        overflow: hidden;
+        border-radius: 16px;
+
+        &::after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            background: var(--laa-clr-sd-1);
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            mix-blend-mode: color;
+            opacity: 0.9;
+        }
+
+        &-item {
+            height: 100%;
+        }
+
+        .swiper-container {
+            height: 100%;
+            .swiper-wrapper {
+                height: 100%;  
+            }
+        }
+
+        &-btn {
+            padding: 0 12px;
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            transform: translateY(-50%);
+            z-index: 2;
+
+            div {
+                svg {
+                    opacity: 100%;
+                    path {
+
+                        stroke: #fff;
+                    }
+
+                }
+
+                .line {
+                    top: 50%;
+                }
+
+                &:hover {
+                    svg {
+                        path {
+                            stroke: var(--laa-clr-sd-1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* 
+    laa-feature-1-end
+*/

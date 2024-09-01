@@ -362,7 +362,39 @@
 }
 
 
+/* 
+    laa-paly-btn-1
+*/
+.laa-play-btn-1 {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--laa-h-font-1);
+    text-transform: capitalize;
+    font-weight: 500;
+    color: #fff;
+    font-size: 18px;
+    transition: all 0.5s var(--laa-cube-1);
+    background: rgb(255 255 255 / 24%);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 10px;
+    padding: 16px 24px;
 
+
+    &:visited {
+        color: #fff;
+    }
+
+    &:hover {
+        transform: translateX(3px);
+        background: var(--laa-clr-sd-1);
+        i {
+            animation: unset;
+        }
+    }
+
+}
 
 
 
