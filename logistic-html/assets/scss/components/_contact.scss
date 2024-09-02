@@ -1,0 +1,93 @@
+/* 
+    laa-contact-1-start
+*/
+.laa-contact-1 {
+
+    &-area {
+        border-radius: 20px;
+
+
+        &::after {
+            content: "";
+            width: 60%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: linear-gradient(90deg, rgba(26, 45, 78, 1) 35%, rgba(0, 212, 255, 0) 100%);
+            z-index: -1;
+            opacity: 90%;
+        }
+    }
+
+    &-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -2;
+    }
+
+    &-shape {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+
+        @media #{$md,$xs} {
+            display: none;
+        }
+    }
+
+    &-scn-title {
+        max-width: 530px;
+
+        .laa-scn-title-1 {
+            font-size: 45px;
+            line-height: 1.177;
+
+            @media #{$lg} {
+                font-size: 40px;
+            }
+
+            @media #{$md} {
+                font-size: 36px;
+            }
+
+            @media #{$xs} {
+                font-size: 30px;
+            }
+
+            @media #{$sm} {
+                font-size: 34px;
+            }
+        }
+    }
+
+    &-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 50px;
+        flex-wrap: wrap;
+    }
+
+    &-form {
+        .laa-form-1 {
+            background: rgba(255, 255, 255, 95%);
+            backdrop-filter: unset;
+            -webkit-backdrop-filter: unset;
+        }
+        .laa-form-1-box {
+            &::after {
+                backdrop-filter: unset;
+                -webkit-backdrop-filter: unset;
+                background: rgba(255, 255, 255, 0.3);
+            }
+        }
+    }
+}
+/* 
+    laa-contact-1-end
+*/

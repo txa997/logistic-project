@@ -77,7 +77,39 @@ laa_ani1.from(".laa-animate-1-cloud-2" , { xPercent: 50 ,  opacity: 0  }, "<=")
 laa_ani1.from(".laa-animate-1-cloud-3" , { xPercent: 100 ,  opacity: 0  }, "<=.1")
 laa_ani1.from(".laa-animate-1-plane" , { xPercent: 100 , yPercent: -100, scale: .3, rotate: -30 , opacity: 0 }, "<=.5")
 
+// faq-1
+var laa_faq = gsap.timeline({
 
+	scrollTrigger: {
+	  animation: laa_faq,
+	  trigger: '.laa-faq-1-img',
+	  start: "top 95%",
+	  end: "top 50%",
+	  scrub: 4,
+	  toggleActions: "play reverse play reverse",
+	  markers: false
+	}
+});
+	
+laa_faq.from(".laa-faq-1-img" , { xPercent: -100 ,  })
+
+gsap.utils.toArray(".laa-img-parallax").forEach(function(container) {
+	let image = container.querySelector("img");
+
+	let tl = gsap.timeline({
+		scrollTrigger: {
+			trigger: container,
+			scrub: .5,
+		},
+	}); 
+	tl.from(image, {
+		yPercent: -30,
+		ease: "none",
+	}).to(image, {
+		yPercent: 30,
+		ease: "none",
+	}); 
+});
 
 // services-1-slider
 if($('.laa-s1-active').length) {
@@ -173,6 +205,44 @@ if($('.laa-f1-active').length) {
 	});
 }
 	
+// testimonial-1-slider
+if($('.laa-t1-active').length) {
+	let slider = new Swiper('.laa-t1-active', {
+		loop: true,
+		spaceBetween: 30,
+		speed: 1000,
+		slidesPerView: 1,
+
+		autoplay: {
+			delay: 5000,
+		},
+
+		navigation: {
+			nextEl: ".laa-t1-next",
+			prevEl: ".laa-t1-prev",
+		},
+
+	});
+}
+if($('.laa-t1-active-2').length) {
+	let slider = new Swiper('.laa-t1-active-2', {
+		loop: true,
+		spaceBetween: 30,
+		speed: 1000,
+		slidesPerView: 1,
+
+		autoplay: {
+			delay: 5000,
+		},
+
+		navigation: {
+			nextEl: ".laa-t2-next",
+			prevEl: ".laa-t2-prev",
+		},
+
+	});
+}
+	
 // text-slide-1
 if($('.text-slide-1-active').length) {
 	$('.text-slide-1-active').marquee({
@@ -187,6 +257,10 @@ if($('.text-slide-1-active').length) {
 }
 
 
+/* faq-active-class */
+$(document).on('click', '.laa-accordion-item', function(){
+	$(this).addClass('faq_bg').siblings().removeClass('faq_bg')
+})
 
 
 

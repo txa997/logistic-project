@@ -7,6 +7,8 @@
         border-radius: 20px;
     }
 
+
+
     &-wrap {
         display: flex;
         align-items: center;
@@ -31,6 +33,16 @@
 
         @media #{$md,$xs} {
             font-size: 40px;
+        }
+
+        .icon {
+            transition: all .5s var(--laa-cube-1);
+        }
+
+        &:hover {
+            .icon {
+                transform: scale(1.3);
+            }
         }
     }
 }
