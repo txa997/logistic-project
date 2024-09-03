@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
 					spaceBetween: 0,
 					speed: 1000,
 					autoplay: {
-						delay: 40000000,
+						delay: 5000,
 					},
 
 			
@@ -181,6 +181,45 @@ gsap.utils.toArray(".laa-img-parallax").forEach(function(container) {
 });
 
 
+// pattn-1
+document.querySelectorAll('.laa-pattn').forEach((section, index) => {
+	const timeline = gsap.timeline({
+	  scrollTrigger: {
+		trigger: section,
+		start: "top 95%",
+		toggleActions: "play reverse play reverse",
+		markers: false,
+	  }
+	});
+  
+	// Animate each child element within the section based on its index
+	timeline.from(section.querySelector('.laa-pattn-1'), { xPercent: -100, opacity: 0.16, duration: .3 });
+	timeline.from(section.querySelector('.laa-pattn-2'), { yPercent: -100, opacity: 0.16, duration: .3 });
+	timeline.from(section.querySelector('.laa-pattn-3'), { xPercent: -100, opacity: 0.56, duration: .3 });
+	timeline.from(section.querySelector('.laa-pattn-4'), { yPercent: -100, opacity: 0.08, duration: .3 });
+  });
+  
+
+// pattn-1
+document.querySelectorAll('.laa-pattn-two').forEach((section, index) => {
+	const timeline = gsap.timeline({
+	  scrollTrigger: {
+		trigger: section,
+		start: "top 95%",
+		toggleActions: "play reverse play reverse",
+		markers: false,
+	  }
+	});
+  
+	// Animate each child element within the section based on its index
+	timeline.from(section.querySelector('.laa-pattn-two-1'), { yPercent: 100, opacity: 0.16, duration: .3 });
+	timeline.from(section.querySelector('.laa-pattn-two-2'), { xPercent: -100, opacity: 0.16, duration: .3 });
+	timeline.from(section.querySelector('.laa-pattn-two-3'), { xPercent: -100, opacity: 0.56, duration: .3 });
+	timeline.from(section.querySelector('.laa-pattn-two-4'), { yPercent: 100, opacity: 0.08, duration: .3 });
+  });
+  
+
+
 
 // services-1-slider
 if($('.laa-s1-active').length) {
@@ -245,7 +284,7 @@ if($('.laa-s2-active').length) {
 		slidesPerView: 1,
 
 		autoplay: {
-			delay: 5000000,
+			delay: 5000,
 		},
 
 		navigation: {

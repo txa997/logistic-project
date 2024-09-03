@@ -212,11 +212,12 @@
     gap: 12px;
     position: relative;
     z-index: 1;
+    text-align: left;
 
     svg {
         position: absolute;
-        right: 29px;
-        top: 0px;
+        right: 30px;
+        top: 1px;
         z-index: -1;
         transition: all .5s var(--laa-cube-1);
 
@@ -230,7 +231,6 @@
         background: var(--laa-clr-h1);
         border-radius: 16px;
         padding: 21px 28px;
-        padding-right: 24px;
         transition: all .5s var(--laa-cube-1);
     }
 
@@ -311,6 +311,8 @@
 
         .laa-pr-btn-1-right {
             border-color: var(--laa-clr-sd-1);
+            background: var(--laa-clr-h1);
+            color: var(--laa-clr-sd-1);
         }
         svg {
             transform: scaleY(0);
@@ -347,10 +349,8 @@
 
         .laa-pr-btn-1-right {
             border-color: #fff;
-            .icon {
-                background: var(--laa-clr-h1);
-                color: #fff;
-            }
+            background: var(--laa-clr-h1);
+            color: #fff;
         }
 
         .text::before {
@@ -370,37 +370,29 @@
 
             .laa-pr-btn-1-right {
                 border-color: var(--laa-clr-sd-1);
-
-                .icon {
-                    background: #fff;
-                    color: var(--laa-clr-h1);
-                }
+                background: #fff;
+                color: var(--laa-clr-sd-1);
             }
         }
     }
 
     &:is(.has-header) {
+        gap: 8px;
 
         .laa-pr-btn-1-left {
             padding: 15px 22px;
-            padding-right: 14px;
             background: var(--laa-clr-sd-1);
         }
 
         .laa-pr-btn-1-right {
+            width: 44px;
+            height: 45px;
             border-color: var(--laa-clr-sd-1);
-            .icon {
-                background: #fff;
-                color: var(--laa-clr-sd-1);
-                width: 36px;
-                height: 38px;
-            }
+            color: var(--laa-clr-sd-1);
         }
 
         svg {
-            right: 30px;
-            top: 1px;
-
+            right: 25px;
             * {
                 fill: var(--laa-clr-sd-1);
             }
@@ -413,37 +405,38 @@
 
             .laa-pr-btn-1-right {
                 border-color: var(--laa-clr-h1);
-                .icon {
-                    color: var(--laa-clr-h1);
-                }
+                background: var(--laa-clr-sd-1);
+                color: var(--laa-clr-h1);
             }
         }
 
     }
 
     &:is(.has-form) {
+        gap: 8px;
 
         .laa-pr-btn-1-left {
             padding: 15px 22px;
-            padding-right: 14px;
         }
 
         .laa-pr-btn-1-right {
-            .icon {
-                width: 36px;
-                height: 38px;
-            }
+            width: 44px;
+            height: 45px;
         }
 
         svg {
-            right: 30px;
-            top: 1px;
-
+            right: 25px;
             * {
                 fill: var(--laa-clr-h1);
             }
         }
 
+        &:hover {
+            .laa-pr-btn-1-right {
+                color: var(--laa-clr-sd-1);
+                
+            }
+        }
 
     }
 
@@ -455,10 +448,6 @@
 
         .laa-pr-btn-1-right {
             border-color: var(--laa-clr-sd-1);
-
-            .icon {
-                color: var(--laa-clr-sd-1);
-            }
         }
 
         svg {
@@ -480,13 +469,33 @@
             }
             .laa-pr-btn-1-right {
                 border-color: #fff;
-
-                .icon {
-                    background: var(--laa-clr-sd-1);
-                    color: #fff;
-                }
+                background: var(--laa-clr-sd-1);
+                color: #fff;
             }
         }
+    }
+
+    &:is(.has-red) {
+
+        .laa-pr-btn-1-left {
+            background: var(--laa-clr-sd-1);
+        }
+
+        .laa-pr-btn-1-right {
+            border-color: var(--laa-clr-sd-1);
+
+            .icon {
+                color: var(--laa-clr-sd-1);
+            }
+        }
+
+        svg {
+
+            * {
+                fill: var(--laa-clr-sd-1);
+            }
+        }
+
     }
 
 }  
@@ -579,6 +588,7 @@
 
     &:hover {
         transform: translateX(3px);
+        color: #fff;
         background: var(--laa-clr-sd-1);
         i {
             animation: unset;

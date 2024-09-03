@@ -17,6 +17,12 @@
     }
 }
 
+.laa-pattn {
+    .laa-pattn-1 , .laa-pattn-2, .laa-pattn-3, .laa-pattn-4 {
+        transition: var(--laa-cube-1);
+    }
+}
+
 .laa-scn-margin {
     margin-left: 20px;
     margin-right: 20px;
