@@ -24,10 +24,14 @@ body {
 		}
 	}
 
-
-	.split-line {
-		overflow: hidden;
+	&:not(.laa-home) {
+		.split-line {
+			overflow: hidden;
+		}
 	}
+
+
+
 	.mfp-iframe-holder .mfp-close {
 		right: 0;
 		padding: 0;

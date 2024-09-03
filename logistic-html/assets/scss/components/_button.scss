@@ -195,23 +195,56 @@
 */
 
 .laa-pr-btn-1 {
+    padding: 0;
+    margin: 0;
     border: none;
     outline: none;
     display: inline-flex;
     flex: 0 0 auto;
-    gap: 34px;
-    align-items: center;
     font-family: var(--laa-h-font-1);
     text-transform: capitalize;
     font-size: 16px;
     line-height: 1;
-    background: var(--laa-clr-h1);
+    background: transparent;
     color: #fff;
-    padding: 4px;
-    padding-left: 22px;
-    border-radius: 16px;
     font-weight: 600;
-    transition: all .5s  var(--laa-cube-1);
+    transition: all 0.5s var(--laa-cube-1);
+    gap: 12px;
+    position: relative;
+    z-index: 1;
+
+    svg {
+        position: absolute;
+        right: 29px;
+        top: 0px;
+        z-index: -1;
+        transition: all .5s var(--laa-cube-1);
+
+        * {
+            fill: var(--laa-clr-h1);
+        }
+    }
+
+
+    &-left {
+        background: var(--laa-clr-h1);
+        border-radius: 16px;
+        padding: 21px 28px;
+        padding-right: 24px;
+        transition: all .5s var(--laa-cube-1);
+    }
+
+    &-right {
+        flex: 0 0 auto;
+        border: 4px solid var(--laa-clr-h1);
+        border-radius: 16px;
+        width: 56px;
+        height: 57px;
+        background: #fff;
+        color: var(--laa-clr-h1);
+        overflow: hidden;
+        transition: all .5s var(--laa-cube-1);
+    }
 
     .text {
         position: relative;
@@ -230,6 +263,7 @@
             position: absolute;
             content: attr(data-back);
             transform: translateY(100%);
+            color: #fff;
         }
     
         &::before {
@@ -241,22 +275,18 @@
             position: relative;
             content: attr(data-front);
             transform: translateY(0);
+            color: #fff;
         }
     }
 
     .icon {
+        width: 100%;
+        height: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
-        background: #fff;
-        color: var(--laa-clr-h1);
-        flex: 0 0 auto;
-        border-radius: 12px;
-        width: 48px;
-        height: 48px;
         position: relative;
         z-index: 1;
-        overflow: hidden;
         transition: all .5s  var(--laa-cube-1);
 
         i {
@@ -273,8 +303,18 @@
     }
 
     &:hover {
-        color: #fff;
+        color: inherit;
 
+        .laa-pr-btn-1-left {
+            background: var(--laa-clr-sd-1);
+        }
+
+        .laa-pr-btn-1-right {
+            border-color: var(--laa-clr-sd-1);
+        }
+        svg {
+            transform: scaleY(0);
+        }
         .text {
             &::after {
                 opacity: 1;
@@ -293,6 +333,157 @@
                 }
                 &:nth-child(2) {
                     left: 110%;
+                }
+            }
+        }
+    }
+
+
+    &:is(.has-white) {
+
+        .laa-pr-btn-1-left {
+            background: #fff;
+        }
+
+        .laa-pr-btn-1-right {
+            border-color: #fff;
+            .icon {
+                background: var(--laa-clr-h1);
+                color: #fff;
+            }
+        }
+
+        .text::before {
+            color: var(--laa-clr-h1);
+        }
+
+        svg {
+            * {
+                fill: #fff;
+            }
+        }
+
+        &:hover {
+            .laa-pr-btn-1-left {
+                background: var(--laa-clr-sd-1);
+            }
+
+            .laa-pr-btn-1-right {
+                border-color: var(--laa-clr-sd-1);
+
+                .icon {
+                    background: #fff;
+                    color: var(--laa-clr-h1);
+                }
+            }
+        }
+    }
+
+    &:is(.has-header) {
+
+        .laa-pr-btn-1-left {
+            padding: 15px 22px;
+            padding-right: 14px;
+            background: var(--laa-clr-sd-1);
+        }
+
+        .laa-pr-btn-1-right {
+            border-color: var(--laa-clr-sd-1);
+            .icon {
+                background: #fff;
+                color: var(--laa-clr-sd-1);
+                width: 36px;
+                height: 38px;
+            }
+        }
+
+        svg {
+            right: 30px;
+            top: 1px;
+
+            * {
+                fill: var(--laa-clr-sd-1);
+            }
+        }
+
+        &:hover {
+            .laa-pr-btn-1-left {
+                background: var(--laa-clr-h1);
+            }
+
+            .laa-pr-btn-1-right {
+                border-color: var(--laa-clr-h1);
+                .icon {
+                    color: var(--laa-clr-h1);
+                }
+            }
+        }
+
+    }
+
+    &:is(.has-form) {
+
+        .laa-pr-btn-1-left {
+            padding: 15px 22px;
+            padding-right: 14px;
+        }
+
+        .laa-pr-btn-1-right {
+            .icon {
+                width: 36px;
+                height: 38px;
+            }
+        }
+
+        svg {
+            right: 30px;
+            top: 1px;
+
+            * {
+                fill: var(--laa-clr-h1);
+            }
+        }
+
+
+    }
+
+    &:is(.has-red-white) {
+
+        .laa-pr-btn-1-left {
+            background: var(--laa-clr-sd-1);
+        }
+
+        .laa-pr-btn-1-right {
+            border-color: var(--laa-clr-sd-1);
+
+            .icon {
+                color: var(--laa-clr-sd-1);
+            }
+        }
+
+        svg {
+
+            * {
+                fill: var(--laa-clr-sd-1);
+            }
+        }
+
+        &:hover {
+
+            .text {
+                &::after {
+                    color: var(--laa-clr-h1);
+                }
+            }
+            .laa-pr-btn-1-left {
+                background: #fff;
+            }
+            .laa-pr-btn-1-right {
+                border-color: #fff;
+
+                .icon {
+                    background: var(--laa-clr-sd-1);
+                    color: #fff;
                 }
             }
         }

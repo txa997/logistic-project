@@ -248,18 +248,22 @@
     &-1 {
         transform: rotateY(90deg);
         transition: all 1s var(--laa-cube-1);
+        transition-delay: 0s;
     }
     &-2 {
         transform: rotateY(90deg);
         transition: all 1s var(--laa-cube-1);
+        transition-delay: 0s;
     }
     &-3 {
         transform: rotateY(90deg);
         transition: all 1s var(--laa-cube-1);
+        transition-delay: 0s;
     }
     &-4 {
         transform: rotateX(-90deg);
         transition: all 1s var(--laa-cube-1);
+        transition-delay: 0s;
         transform-origin: bottom;
     }
     

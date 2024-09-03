@@ -1,0 +1,115 @@
+/* 
+    newsletter-1-start
+*/
+.laa-newsletter-1 {
+    &-plane {
+        width: 20%;
+        position: absolute;
+        right: 2%;
+        top: 10%;
+        opacity: .8;
+
+        @media #{$xs} {
+            display: none;
+        }
+    }
+
+    &-wrap {
+        max-width: 990px;
+        display: grid;
+        gap: 64px;
+        align-items: center;
+        grid-template-columns: auto auto;
+
+        @media #{$md,$xs} {
+            grid-template-columns: 1fr;
+        }        
+    }
+
+    &-title {
+        font-size: 32px;
+        line-height: 1.25;
+        color: #fff;
+        width: 100%;
+        max-width: 480px;
+        width: 100%;
+
+        @media #{$xs} {
+            font-size: 22px;
+        }
+
+        @media #{$sm} {
+            font-size: 26px;
+        }
+    }
+
+    &-form {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+
+        &-input {
+            display: block;
+            width: 100%;
+            outline: none;
+            background: transparent;
+            font-size: 17px;
+            font-family: var(--laa-h-font-1);
+            color: rgba(255, 255, 255, 80%);
+            border: 2px solid #fff;
+            height: 56px;
+            border-radius: 12px;
+            padding: 0 20px;
+            transition: all .4s var(--laa-cube-1);
+
+            &::placeholder {
+                font-family: var(--laa-h-font-1);
+                font-size: 17px;
+                color: rgba(255, 255, 255, 80%);
+            }
+            
+            &:hover {
+                color: rgba(255, 255, 255, 80%);
+                border-color: rgba(255, 255, 255, 50%);
+            }
+
+            &:focus {
+                border-color: rgba(255, 255, 255, 50%);
+            }
+
+        }
+
+
+        &-btn {
+            flex: 0 0 auto;
+            background: #fff;
+            border: none;
+            outline: none;
+            padding: 0;
+            margin: 0;
+            border-radius: 12px;
+            flex: 0 0 auto;
+            color: var(--laa-clr-sd-1);
+            width: 56px;
+            height: 56px;
+            font-size: 18px;
+            transition: all .5s var(--laa-cube-1);
+
+            i {
+                transition: all .5s var(--laa-cube-1);
+            }
+
+            &:hover {
+                background: var(--laa-clr-pr-1);
+                color: #fff;
+
+                i {
+                    transform: translate(2px , -2px) scale(105%);
+                }
+            }
+        }
+    }
+}
+/* 
+    newsletter-1-end
+*/

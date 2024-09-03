@@ -120,7 +120,7 @@
         }
 
         &:hover  {
-            border-color: #000;
+            border-color: rgba(26, 45, 78, 0.5);
         }
     }
 
@@ -162,7 +162,7 @@
     }
 
     &:hover {
-        border-color: #000;
+        border-color: rgba(26, 45, 78, 0.5);
         .current {
             color: var(--laa-clr-h1);
         }
