@@ -23,7 +23,11 @@
   </head>
   <body class="laa-home bg-default" data-background="assets/imgs/bg/body-bg.png">
 
-  	<div id="preloader"></div>
+  	<div id="preloader">
+		<div class="loader">
+			<img src="assets/img/loader.gif" alt="">
+		</div>
+	</div>
 
 	<!-- header-start -->
 	<div class="laa-header-1-area laa-scn-margin">
@@ -1545,13 +1549,6 @@
 	<div class="laa-testimonial-1-area p-relative pt-120 pb-95 fix">
 
 		<img src="assets/imgs/testimonial/bg.png" alt="" class="laa-testimonial-1-bg">
-
-		<svg class="laa-testimonial-1-shape-2 laa-pattn fix" width="210" height="140" viewBox="0 0 210 140" fill="none" xmlns="http://www.w3.org/2000/svg">
-			<rect class="laa-pattn-2" opacity="0.16" width="70" height="70" transform="matrix(1 0 0 -1 70 70)" fill="#1A2D4E"/>
-			<rect class="laa-pattn-1" opacity="0.16" width="70" height="70" transform="matrix(1 0 0 -1 0 70)" fill="#27AAE2"/>
-			<rect class="laa-pattn-3" opacity="0.56" width="70" height="70" transform="matrix(1 0 0 -1 140 70)" fill="white"/>
-			<rect class="laa-pattn-4" opacity="0.08" width="70" height="70" transform="matrix(1 0 0 -1 70 140)" fill="#F62459"/>
-		</svg>
 			
 
 		<div class="container laa-container-1">
@@ -1671,7 +1668,7 @@
 				</div>
 			</div>
 
-			<div class="laa-testimonial-1-wrap-2 mb-50">
+			<div class="laa-testimonial-1-wrap-2 mb-50 p-relative">
 
 				<!-- slider -->
 				<div class="laa-testimonial-1-slider-2 p-relative">
@@ -1772,6 +1769,13 @@
 						</svg>
 					</a>
 				</div>
+
+				<svg class="laa-testimonial-1-shape-2 laa-pattn fix" width="210" height="140" viewBox="0 0 210 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<rect class="laa-pattn-2" opacity="0.16" width="70" height="70" transform="matrix(1 0 0 -1 70 70)" fill="#1A2D4E"/>
+					<rect class="laa-pattn-1" opacity="0.16" width="70" height="70" transform="matrix(1 0 0 -1 0 70)" fill="#27AAE2"/>
+					<rect class="laa-pattn-3" opacity="0.56" width="70" height="70" transform="matrix(1 0 0 -1 140 70)" fill="white"/>
+					<rect class="laa-pattn-4" opacity="0.08" width="70" height="70" transform="matrix(1 0 0 -1 70 140)" fill="#F62459"/>
+				</svg>
 			</div>
 
 
@@ -2075,7 +2079,12 @@
 				<form action="#" class="laa-newsletter-1-form">
 					<input type="email" placeholder="Write your mail here..." class="laa-newsletter-1-form-input">
 					<button type="button" aria-label="name" class="laa-newsletter-1-form-btn">
-						<i class="fal fa-paper-plane"></i>
+						<i>
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M22 2L11 13" stroke="#F62459" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M22 2L15 22L11 13L2 9L22 2Z" stroke="#F62459" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</i>
 					</button>
 				</form>
 			</div>
@@ -2285,7 +2294,13 @@
 						</li>
 						<li>
 							<a href="#" aria-label="name">
-								<i class="far fa-envelope"></i>
+								<i >
+									<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M2.66665 2.66699H13.3333C14.0666 2.66699 14.6666 3.26699 14.6666 4.00033V12.0003C14.6666 12.7337 14.0666 13.3337 13.3333 13.3337H2.66665C1.93331 13.3337 1.33331 12.7337 1.33331 12.0003V4.00033C1.33331 3.26699 1.93331 2.66699 2.66665 2.66699Z" stroke="#F62459" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M14.6666 4L7.99998 8.66667L1.33331 4" stroke="#F62459" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+										
+								</i>ass
 								info@logistify.co.uk
 							</a>
 						</li>
@@ -2347,6 +2362,8 @@
 		</div>
 	</div>
 	<!-- slide-text-end -->
+
+	<div class="laa-hight-20"></div>
 
 	<!-- For Js Library -->
 	<script src="assets/js/jquery-3.7.0.min.js"></script>

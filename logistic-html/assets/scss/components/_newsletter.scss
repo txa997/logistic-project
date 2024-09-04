@@ -96,7 +96,13 @@
             transition: all .5s var(--laa-cube-1);
 
             i {
+                display: inline-block;
                 transition: all .5s var(--laa-cube-1);
+                svg {
+                    * {
+
+                    }
+                }
             }
 
             &:hover {
@@ -105,6 +111,12 @@
 
                 i {
                     transform: translate(2px , -2px) scale(105%);
+
+                    svg {
+                        * {
+                            stroke: #000;
+                        }
+                    }
                 }
             }
         }

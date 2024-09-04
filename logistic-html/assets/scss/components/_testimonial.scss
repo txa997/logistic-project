@@ -25,8 +25,8 @@
 
     &-shape-2 {
         position: absolute;
-        right: 17%;
-        bottom: 5%;
+        right: 3%;
+        top: 100%;
         z-index: -1;
 
         @media #{$xl,$lg,$md,$xs} {
