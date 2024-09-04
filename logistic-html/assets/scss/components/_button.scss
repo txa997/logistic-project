@@ -252,6 +252,7 @@
         overflow: hidden;
         line-height: 1;
         margin-bottom: -2px;
+        display: inline-block;
 
         &::after {
             top: 0;
@@ -297,7 +298,7 @@
             transition: all .5s  var(--laa-cube-1);
 
             &:nth-child(1) {
-                left: -20%;
+                left: -30%;
             }
         }
     }
@@ -311,7 +312,6 @@
 
         .laa-pr-btn-1-right {
             border-color: var(--laa-clr-sd-1);
-            background: var(--laa-clr-h1);
             color: var(--laa-clr-sd-1);
         }
         svg {
@@ -334,7 +334,7 @@
                     left: 50%;
                 }
                 &:nth-child(2) {
-                    left: 110%;
+                    left: 130%;
                 }
             }
         }
@@ -405,7 +405,6 @@
 
             .laa-pr-btn-1-right {
                 border-color: var(--laa-clr-h1);
-                background: var(--laa-clr-sd-1);
                 color: var(--laa-clr-h1);
             }
         }
@@ -519,28 +518,23 @@
         circle {
 
             &:nth-child(1) {
-                r: 30;
-                cx: 32;
-                cy: 32;
                 fill: transparent;
                 stroke: var(--laa-clr-sd-1);
                 stroke-width: 2px;
                 stroke-dasharray: 200px;
                 stroke-dashoffset: 0;
                 opacity: 16%;
+                stroke-dasharray: 0px;
+                stroke-dashoffset: 270px;
             }
 
             &:nth-child(2) {
-                r: 30;
-                cx: 32;
-                cy: 32;
                 fill: transparent;
                 stroke: var(--laa-clr-sd-1);
                 stroke-width: 4px;
-                stroke-dasharray: 200px;
-                stroke-dashoffset: 200px;
+                stroke-dasharray: 270px;
+                stroke-dashoffset: 270px;
             }
-
 
         }
     }

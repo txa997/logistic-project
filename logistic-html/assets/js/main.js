@@ -13,7 +13,11 @@ document.addEventListener("DOMContentLoaded", function () {
 						delay: 5000,
 					},
 
-			
+					pagination: {
+						el: ".laa-h-3-pagination",
+						clickable: true,
+					},
+
 					navigation: {
 						nextEl: ".laa-h1-slider-next",
 						prevEl: ".laa-h1-slider-prev",

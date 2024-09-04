@@ -120,6 +120,41 @@
             z-index: 1;
         }
 
+        &-pagination {
+            position: absolute;
+            right: 44px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1;
+
+            @media #{$xs} {
+                display: none;
+            }
+
+            .laa-h-3-pagination {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+                align-items: end;
+                justify-content: center;
+
+                span {
+                    width: 12px;
+                    height: 2px;
+                    border-radius: 0px;
+                    margin: 0;
+                    padding: 0;
+                    opacity: 40%;
+                    background: #fff;
+                    transition: all 1s var(--laa-cube-1);
+
+                    &:is(.swiper-pagination-bullet-active) {
+                        opacity: 100%;
+                        width: 36px;
+                    }
+                }
+            }
+        }
 
         .swiper-container {
             .swiper-wrapper {
