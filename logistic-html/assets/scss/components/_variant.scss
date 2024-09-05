@@ -211,10 +211,15 @@
         background: linear-gradient(90deg, rgb(32, 32, 32) 80%, rgba(0, 212, 255, 0) 100%);
     }
 
+    // services
+    .laa-services-1-slider-item .content-wrap .item-disc {
+        color: #000;
+    }
+
     // counter 
     .laa-counter-1 {
         &-wrap {
-            border-color: #3d3d3d;
+            border-color: rgb(61 61 61 / 70%);
             overflow: hidden;
 
         }
@@ -222,16 +227,17 @@
         &-item {
             &:not(:last-child) {
                 @media #{$over,$xxxl,$xxl,$xl,$lg} {
-                    border-color: #3d3d3d; 
+                    border-color: rgb(61 61 61 / 70%);
                 }
             }   
-            background: #0A0A0A;
+            background: linear-gradient(180deg, rgba(61, 61, 61, 40%), rgba(61, 61, 61, 0) 100%);
         }
     }
 
     // services-2 
     .laa-services-2-slider-item::after {
         background: linear-gradient(90deg, rgb(32, 32, 32) 35%, rgba(0, 212, 255, 0) 100%);
+        opacity: 92%;
     }
 
 
@@ -307,6 +313,7 @@
     // contact
     .laa-contact-1-area::after {
         background: linear-gradient(90deg, rgb(36, 36, 36) 35%, rgba(0, 212, 255, 0) 100%);
+        opacity: 95%;
     }
 
     // footer
@@ -367,6 +374,10 @@
 
     .laa-footer-1-bottom-copyright {
         color: rgb(255 255 255 / 80%);
+    }
+
+    .laa-blog-1-bg {
+        right: 0;
     }
 }
 /* 

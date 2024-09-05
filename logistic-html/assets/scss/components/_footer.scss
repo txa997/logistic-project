@@ -7,11 +7,12 @@
     }
 
     &-truk {
-        width: 31%;
+        width: 32%;
         position: absolute;
         bottom: 0;
         right: 0;
         z-index: -1;
+        text-align: right;
     }
 
     &-widget {

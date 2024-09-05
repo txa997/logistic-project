@@ -3768,11 +3768,12 @@
   background: #fff;
 }
 .laa-footer-1-truk {
-  width: 31%;
+  width: 32%;
   position: absolute;
   bottom: 0;
   right: 0;
   z-index: -1;
+  text-align: right;
 }
 .laa-footer-1-widget {
   display: grid;
@@ -4277,20 +4278,24 @@
 .laa-home-7-dark .laa-hero-1-slider-item-bg .item-bg::before {
   background: linear-gradient(90deg, rgb(32, 32, 32) 80%, rgba(0, 212, 255, 0) 100%);
 }
+.laa-home-7-dark .laa-services-1-slider-item .content-wrap .item-disc {
+  color: #000;
+}
 .laa-home-7-dark .laa-counter-1-wrap {
-  border-color: #3d3d3d;
+  border-color: rgba(61, 61, 61, 0.7);
   overflow: hidden;
 }
 .laa-home-7-dark .laa-counter-1-item {
-  background: #0A0A0A;
+  background: linear-gradient(180deg, rgba(61, 61, 61, 0.4), rgba(61, 61, 61, 0) 100%);
 }
 @media (min-width: 1800px), only screen and (min-width: 1600px) and (max-width: 1799px), only screen and (min-width: 1400px) and (max-width: 1599px), only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px) {
   .laa-home-7-dark .laa-counter-1-item:not(:last-child) {
-    border-color: #3d3d3d;
+    border-color: rgba(61, 61, 61, 0.7);
   }
 }
 .laa-home-7-dark .laa-services-2-slider-item::after {
   background: linear-gradient(90deg, rgb(32, 32, 32) 35%, rgba(0, 212, 255, 0) 100%);
+  opacity: 92%;
 }
 .laa-home-7-dark .laa-blog-1-fillter-btn button .text {
   background: rgba(61, 61, 61, 0.48);
@@ -4337,6 +4342,7 @@
 }
 .laa-home-7-dark .laa-contact-1-area::after {
   background: linear-gradient(90deg, rgb(36, 36, 36) 35%, rgba(0, 212, 255, 0) 100%);
+  opacity: 95%;
 }
 .laa-home-7-dark .laa-footer-1-widget-single-menu li a {
   color: #fff;
@@ -4380,6 +4386,9 @@
 }
 .laa-home-7-dark .laa-footer-1-bottom-copyright {
   color: rgba(255, 255, 255, 0.8);
+}
+.laa-home-7-dark .laa-blog-1-bg {
+  right: 0;
 }
 
 /* 
