@@ -10,7 +10,7 @@
   --laa-p-font-1: "Inter", sans-serif;
   --laa-clr-pr-1: #27AAE2;
   --laa-clr-sd-1: #F62459;
-  --laa-clr-h1: #3D3D3D;
+  --laa-clr-h1: #1A2D4E;
   --laa-clr-p1: #222222;
   --laa-cube-1: cubic-bezier(0.19, 1, 0.22, 1);
 }
@@ -3837,7 +3837,7 @@
   font-size: 16px;
   opacity: 64%;
   font-weight: 400;
-  margin-bottom: 10px;
+  margin-bottom: 16px;
 }
 .laa-footer-1-widget-single-menu {
   margin: 0;
@@ -3891,7 +3891,7 @@
   top: 49%;
   color: var(--fx-clr-pr-1);
   transform: translateY(-50%);
-  transition: 400ms var(--cube-1);
+  transition: 400ms var(--laa-cube-1);
 }
 .laa-footer-1-widget-single-menu li .has-dropdown {
   padding-top: 14px;
@@ -4146,7 +4146,8 @@
   background: #000;
 }
 .laa-home-7-dark .laa-client-1-title,
-.laa-home-7-dark .laa-scn-title-1 {
+.laa-home-7-dark .laa-scn-title-1,
+.laa-home-7-dark .laa-footer-1-widget-single-title {
   color: #fff;
 }
 .laa-home-7-dark .laa-para-1,
@@ -4183,7 +4184,8 @@
 .laa-home-7-dark .laa-header-1-top {
   background: #3D3D3D;
 }
-.laa-home-7-dark .laa-hero-1-social-link .icon {
+.laa-home-7-dark .laa-hero-1-social-link .icon,
+.laa-home-7-dark .laa-footer-1-area {
   background: transparent;
 }
 .laa-home-7-dark .laa-left-btn-2,
@@ -4234,6 +4236,26 @@
   border-color: var(--laa-clr-sd-1);
   color: var(--laa-clr-sd-1);
 }
+.laa-home-7-dark .laa-phone .title {
+  color: #fff;
+  opacity: 64%;
+}
+.laa-home-7-dark .laa-phone .phone-link {
+  color: #fff;
+}
+.laa-home-7-dark .laa-phone:hover .phone-link {
+  color: var(--laa-clr-sd-1);
+}
+.laa-home-7-dark .laa-footer-1-widget-social-link {
+  background: #000;
+  color: #fff;
+}
+.laa-home-7-dark .laa-footer-1-widget-social-link svg * {
+  fill: #fff;
+}
+.laa-home-7-dark .laa-footer-1-widget-social-link:hover {
+  background: var(--laa-clr-sd-1);
+}
 .laa-home-7-dark .laa-main-navigation .navbar-nav li:is(.dropdown) > a::before {
   color: var(--laa-clr-sd-1);
 }
@@ -4245,6 +4267,9 @@
 }
 .laa-home-7-dark .laa-main-navigation .navbar-nav li .dropdown-menu {
   background: rgba(0, 0, 0, 0.8);
+}
+.laa-home-7-dark #preloader {
+  background: #3D3D3D;
 }
 .laa-home-7-dark .laa-hero-1-slider-item-bg .item-bg::after {
   background: linear-gradient(90deg, rgb(32, 32, 32) 35%, rgba(0, 212, 255, 0) 100%);
@@ -4291,6 +4316,70 @@
 .laa-home-7-dark .laa-testimonial-1-slider-2-item,
 .laa-home-7-dark .laa-testimonial-1-review {
   background: #202020;
+}
+.laa-home-7-dark .laa-accordion-item {
+  background: rgba(255, 255, 255, 0.12);
+}
+.laa-home-7-dark .laa-accordion-item .item-title {
+  color: rgba(255, 255, 255, 0.8);
+}
+.laa-home-7-dark .laa-accordion-item .item-title:is(:not(.collapsed)) {
+  color: #222222;
+}
+.laa-home-7-dark .laa-accordion-item .item-title:hover {
+  transform: translateX(3px);
+}
+.laa-home-7-dark .laa-accordion-item .laa-para-1 {
+  color: #222222;
+}
+.laa-home-7-dark .laa-accordion-item:is(.faq_bg) {
+  background: rgb(255, 255, 255);
+}
+.laa-home-7-dark .laa-contact-1-area::after {
+  background: linear-gradient(90deg, rgb(36, 36, 36) 35%, rgba(0, 212, 255, 0) 100%);
+}
+.laa-home-7-dark .laa-footer-1-widget-single-menu li a {
+  color: #fff;
+}
+.laa-home-7-dark .laa-footer-1-widget-single-menu li a::before {
+  height: 1px;
+  background: #fff;
+}
+.laa-home-7-dark .laa-footer-1-widget-single-menu li a:hover {
+  opacity: 100%;
+}
+.laa-home-7-dark .laa-footer-1-widget-single-menu-2 li a {
+  color: #fff;
+}
+.laa-home-7-dark .laa-footer-1-widget-single-menu-2 li a::after {
+  background: #fff;
+}
+.laa-home-7-dark .laa-footer-1-widget-single-menu-2 li a i {
+  color: #fff;
+}
+.laa-home-7-dark .laa-footer-1-widget-single-menu-2 li a:hover i {
+  color: var(--laa-clr-sd-1);
+}
+.laa-home-7-dark .laa-footer-1-widget-single-contact li {
+  color: #fff;
+}
+.laa-home-7-dark .laa-back-top-1 {
+  color: #fff;
+}
+.laa-home-7-dark .laa-footer-1-bottom-line {
+  background: #000;
+}
+.laa-home-7-dark .laa-footer-1-bottom-menu a {
+  color: #fff;
+}
+.laa-home-7-dark .laa-footer-1-bottom-menu a:not(:last-child) {
+  border-right: 2px solid rgba(255, 255, 255, 0.64);
+}
+.laa-home-7-dark .laa-footer-1-bottom-menu a::after {
+  background: #fff;
+}
+.laa-home-7-dark .laa-footer-1-bottom-copyright {
+  color: rgba(255, 255, 255, 0.8);
 }
 
 /* 
