@@ -6,7 +6,7 @@ File:           JS Core
 Version:        1.0
 Last change:    00/00/00 
 -------------------------------------------------------------------------------- */
-;(function($) {
+(function($) {
 
 	"use strict";
 	const lenis = new Lenis({

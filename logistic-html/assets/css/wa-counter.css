@@ -1,0 +1,7 @@
+.wa-counter{line-height:1;position:relative;color: inherit;font-family:inherit;font-weight: inherit;display:flex;align-items: center;justify-content: center;overflow:hidden;height:3.125rem}.wa-counter>span{z-index:1;display:flex;flex-direction:column;height:100%;transition:transform 1.5s;transform:translateY(0);line-height:1}.wa-counter>span span{flex:0 0 100%;height:100%}.wa-counter:first-child>span{transition-delay:0s}.wa-counter:nth-child(2)>span{transition-delay:375ms}.wa-counter:nth-child(3)>span{transition-delay:0.75s}.wa-counter:nth-child(4)>span{transition-delay:1.125s}.wa-counter:nth-child(5)>span{transition-delay:1.5s}.wa-counter:nth-child(6)>span{transition-delay:1.875s}.wa-counter:nth-child(7)>span{transition-delay:2.25s}.wa-counter:nth-child(8)>span{transition-delay:2.625s}.wa-counter:nth-child(9)>span{transition-delay:3s}.wa-counter:nth-child(10)>span{transition-delay:3.375s}.wa-counter:nth-child(11)>span{transition-delay:3.75s}.wa-counter:nth-child(12)>span{transition-delay:4.125s}.wa-counter:nth-child(13)>span{transition-delay:4.5s}.wa-counter:nth-child(14)>span{transition-delay:4.875s}.wa-counter:nth-child(15)>span{transition-delay:5.25s}.wa-counter:nth-child(16)>span{transition-delay:5.625s}.wa-counter:nth-child(17)>span{transition-delay:6s}.wa-counter:nth-child(18)>span{transition-delay:6.375s}.wa-counter:nth-child(19)>span{transition-delay:6.75s}.wa-counter:nth-child(20)>span{transition-delay:7.125s}
+/*!
+  	* wa-counter 
+	* v1.00 
+	* author: akmol (watchman)
+  	* 2024-2024 
+*/
